@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#1A1D23">
-  <meta name="description" content="Test gratuito para entender tu relación de pareja, amistades y vecinos, hermanos, o papá e hijo, y saber a qué atenerte. Guía de orientación de Edgar García. No reemplaza a un psicólogo.">
+  <meta name="description" content="Muestra gratis de A qué atenerte: 8 señales de pareja. El test completo se abre con un código personal. Guía de orientación de Edgar García. No reemplaza a un psicólogo.">
   <meta name="author" content="Edgar García">
   <title>A qué atenerte — Test para entender tus relaciones</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,7 +101,7 @@ h1, h2, h3, .brand, .card-title, .btn, .opt, .result-title, .area-name {
   letter-spacing: -0.02em;
   line-height: 1.25;
 }
-h1 { font-size: clamp(1.52rem, 5.6vw, 2.05rem); font-weight: 800; margin: 0 0 0.45rem; }
+h1 { font-size: clamp(1.7rem, 6vw, 2.15rem); font-weight: 800; margin: 0 0 0.6rem; }
 h2 { font-size: 1.35rem; font-weight: 700; margin: 0 0 0.6rem; }
 h3 { font-size: 1.1rem; font-weight: 700; margin: 0 0 0.4rem; }
 p { margin: 0 0 0.85rem; }
@@ -161,16 +161,16 @@ a:hover { text-decoration-thickness: 2px; }
 .app-header:not(.in-section) .btn-icon:hover { background: rgba(0,0,0,0.06); }
 .btn-icon[hidden] { display: none; }
 
-main { max-width: 42rem; margin: 0 auto; padding: 0.9rem 1rem 5rem; }
+main { max-width: 42rem; margin: 0 auto; padding: 1.15rem 1rem 5rem; }
 .view[hidden] { display: none !important; }
 
 .hero {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: calc(var(--radius) + 4px);
-  padding: 1.05rem 1.05rem 1rem;
+  padding: 1.35rem 1.2rem 1.25rem;
   box-shadow: var(--shadow);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 .eyebrow {
   font-family: var(--font-title);
@@ -182,12 +182,12 @@ main { max-width: 42rem; margin: 0 auto; padding: 0.9rem 1rem 5rem; }
   margin: 0 0 0.4rem;
 }
 .legal-banner {
-  margin-top: 0.75rem;
-  padding: 0.65rem 0.8rem;
+  margin-top: 1rem;
+  padding: 0.8rem 0.9rem;
   background: #F3EEE6;
   border-left: 4px solid var(--gold);
   border-radius: 0 0.6rem 0.6rem 0;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
 }
 
 .grid { display: grid; gap: 0.85rem; }
@@ -197,7 +197,7 @@ main { max-width: 42rem; margin: 0 auto; padding: 0.9rem 1rem 5rem; }
   text-align: left;
   text-decoration: none;
   color: inherit;
-  background: linear-gradient(180deg, var(--accent-soft) 0%, #ffffff 2.1rem);
+  background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1rem 1rem 1rem 1rem;
@@ -223,7 +223,7 @@ main { max-width: 42rem; margin: 0 auto; padding: 0.9rem 1rem 5rem; }
   color: var(--accent-dark);
   margin: 0 0 0.15rem;
 }
-.card-title { font-size: 1.2rem; font-weight: 700; margin: 0 0 0.3rem; color: var(--accent-dark); }
+.card-title { font-size: 1.2rem; font-weight: 700; margin: 0 0 0.3rem; }
 .card p { margin: 0; color: var(--muted); font-size: 1.02rem; }
 .theme-pareja { --accent: var(--pareja); --accent-dark: var(--pareja-dark); --accent-soft: var(--pareja-soft); }
 .theme-papa { --accent: var(--papa); --accent-dark: var(--papa-dark); --accent-soft: var(--papa-soft); }
@@ -345,14 +345,12 @@ fieldset { border: 0; margin: 0; padding: 0; }
   text-align: center;
 }
 .opt .pts { font-family: var(--font-body); font-size: 0.72rem; font-weight: 600; color: var(--muted); }
-.opt:has(input:checked),
-.opt.is-selected {
+.opt:has(input:checked) {
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
 }
-.opt:has(input:checked) .pts,
-.opt.is-selected .pts { color: rgba(255,255,255,0.9); }
+.opt:has(input:checked) .pts { color: rgba(255,255,255,0.9); }
 .opt:has(input:focus-visible) {
   outline: 3px solid var(--focus);
   outline-offset: 2px;
@@ -387,8 +385,6 @@ fieldset { border: 0; margin: 0; padding: 0; }
   border-color: var(--accent);
   width: 100%;
 }
-.nav-row .btn-primary { width: auto; flex: 1.5; }
-.nav-row .btn-ghost { width: auto; }
 .btn-primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
 .btn-primary[disabled] { opacity: 0.45; cursor: not-allowed; }
 .btn-ghost {
@@ -541,6 +537,75 @@ fieldset { border: 0; margin: 0; padding: 0; }
   main { padding: 0; }
   .view[hidden] { display: none !important; }
 }
+
+/* Unlock and sample */
+.code-form {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0.6rem 0 0;
+}
+.code-form label { font-weight: 700; font-family: var(--font-title); font-size: 1rem; }
+.code-input {
+  width: 100%;
+  min-height: 3.15rem;
+  padding: 0.65rem 0.8rem;
+  border: 2px solid #C9C3B8;
+  border-radius: 0.85rem;
+  font-family: var(--font-title);
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: #fff;
+  color: var(--ink);
+}
+.code-input:focus-visible { border-color: var(--ink); }
+.code-error {
+  color: var(--rojo);
+  font-weight: 700;
+  font-size: 0.98rem;
+  margin: 0;
+}
+.code-error[hidden] { display: none; }
+.unlock-card, .buy-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.05rem 1rem;
+  box-shadow: var(--shadow);
+  margin: 1rem 0;
+}
+.buy-card { border-top: 6px solid var(--gold); }
+.status-pill {
+  display: inline-block;
+  font-family: var(--font-title);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.45rem;
+}
+.preview-grid { display: grid; gap: 0.7rem; margin: 0.8rem 0 1rem; }
+.preview-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.85rem 0.95rem 0.85rem 1.15rem;
+  position: relative;
+  overflow: hidden;
+}
+.preview-card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 8px;
+  background: var(--accent);
+}
+.preview-card h3 { margin: 0 0 0.2rem; color: var(--accent-dark); font-size: 1.05rem; }
+.preview-card p { margin: 0; color: var(--muted); font-size: 0.98rem; }
 </style>
 </head>
 <body>
@@ -556,16 +621,66 @@ fieldset { border: 0; margin: 0; padding: 0; }
   </header>
 
   <main id="contenido" tabindex="-1">
-    <section class="view" id="view-home">
+        <section class="view" id="view-home-sample">
       <div class="hero">
-        <p class="eyebrow">Test gratuito</p>
+        <p class="eyebrow">Muestra gratis</p>
         <h1>Entiende tus relaciones para saber a qué atenerte</h1>
-        <p class="lead">Responde Sí, A medias o No. Al final ves un perfil claro y un semáforo: verde, amarillo o rojo. Mira lo que ocurre la mayoría de las veces, no un solo día.</p>
+        <p class="lead">Responde 8 señales de pareja, sin código y sin pago. Al final ves un resultado corto. El test completo se abre con un código personal.</p>
         <div class="legal-banner"><strong>Esto no reemplaza a un psicólogo.</strong> Guía de orientación de Edgar García. No es un diagnóstico. <a href="#aviso" data-nav="aviso">Aviso completo</a>.</div>
       </div>
 
+      <p><button class="btn btn-primary theme-pareja" type="button" id="btn-start-sample" style="width:100%">Empezar la muestra gratis</button></p>
+
+      <div class="unlock-card" id="unlock-card">
+        <h2>Ya tengo un código</h2>
+        <p>Si ya pagaste y te envié tu código personal, escríbelo aquí para abrir el test completo.</p>
+        <form class="code-form" id="code-form">
+          <label for="code-input">Código personal</label>
+          <input class="code-input" id="code-input" name="codigo" type="text" inputmode="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="AQA-····-··" maxlength="12" aria-describedby="code-error">
+          <p class="code-error" id="code-error" hidden role="alert"></p>
+          <button class="btn btn-primary" type="submit" id="btn-unlock">Entrar al test completo</button>
+        </form>
+      </div>
+
+      <div class="howto">
+        <h2>Qué incluye el test completo</h2>
+        <p class="muted">Cada tipo de relación tiene su color. Ese color no es el semáforo del resultado (verde, amarillo o rojo).</p>
+        <div class="preview-grid">
+          <div class="preview-card theme-pareja">
+            <h3>Relación de pareja</h3>
+            <p>30 señales en 10 áreas, y una parte opcional si hay hijos o una familia ensamblada.</p>
+          </div>
+          <div class="preview-card theme-amistad">
+            <h3>Amistades y vecinos</h3>
+            <p>18 señales de amistad y 9 para un vecino, un conocido o un compañero.</p>
+          </div>
+          <div class="preview-card theme-hermanos">
+            <h3>Hermanos</h3>
+            <p>18 señales: respeto, apoyo, justicia y el espacio de cada uno.</p>
+          </div>
+          <div class="preview-card theme-papa">
+            <h3>Papá e hijo</h3>
+            <p>18 señales si el hijo ya es joven o adulto. Puedes responder como papá o como hijo.</p>
+          </div>
+        </div>
+        <p>El test completo cuesta <strong>20.000 pesos</strong>. Se paga por Nequi al 304 234 9545. En cuanto vea el pago, te envío tu código personal por WhatsApp.</p>
+        <p><a class="btn btn-wa" id="btn-wa-buy" href="#" target="_blank" rel="noopener noreferrer">Quiero el test completo por WhatsApp</a></p>
+      </div>
+
+      <p><a class="btn btn-ghost" href="#alarmas" data-nav="alarmas" style="width:100%">Señales de alarma (gratis)</a></p>
+    </section>
+
+<section class="view" id="view-home-full" hidden>
+      <div class="hero">
+        <p class="eyebrow" id="unlocked-badge">Test completo desbloqueado</p>
+        <h1>Entiende tus relaciones para saber a qué atenerte</h1>
+        <p class="lead">Responde con honestidad: Sí, A medias o No. Al final ves un perfil claro y un color de semáforo: verde, amarillo o rojo.</p>
+        <p>Sirve para mirar una pareja, una amistad, un vecino o compañero, un hermano, o la relación entre papá e hijo. Mira lo que ocurre la mayoría de las veces, no un solo día.</p>
+        <div class="legal-banner"><strong>Esto no reemplaza a un psicólogo.</strong> Es una guía de orientación práctica, elaborada por Edgar García. No es un diagnóstico ni un tratamiento. <a href="#aviso" data-nav="aviso">Leer el aviso completo</a>.</div>
+      </div>
+
       <h2>Elige el tipo de relación</h2>
-      <p class="muted" style="margin-bottom:0.7rem">Cada tipo tiene su color, para distinguirlo con facilidad. Ese color no es el semáforo del resultado (verde, amarillo o rojo).</p>
+      <p class="muted">Cada tipo tiene su propio color, para distinguirlo con facilidad. Ese color no es el semáforo del resultado.</p>
       <div class="grid">
         <a class="card theme-pareja" href="#pareja" data-nav="pareja">
           <p class="card-kicker">Fucsia</p>
@@ -701,490 +816,9 @@ fieldset { border: 0; margin: 0; padding: 0; }
     <p>A qué atenerte. Guía para entender mis relaciones. Guía de orientación práctica. No reemplaza a un psicólogo.</p>
   </footer>
 
-  <script>window.DATA = {
-  "pareja": {
-    "id": "pareja",
-    "theme": "pareja",
-    "title": "Relación de pareja",
-    "kicker": "Fucsia",
-    "short": "30 señales en 10 áreas. Si hay hijos, al final puedes responder una parte opcional.",
-    "intro": [
-      "Una pareja no se define solo por el cariño o por el sexo. Se mira también el proyecto, la forma de pelear, la confianza, el respeto, el dinero y si el cuidado es de los dos.",
-      "El resultado ayuda a distinguir varios caminos: una pareja sólida, una pareja en crisis que aún se puede trabajar, una amistad con atracción, una relación centrada en lo sexual, o una relación dañina.",
-      "Si en esta relación hay hijos, al terminar puedes responder una parte opcional. Esa parte se mira aparte, porque los hijos cambian el sistema de la pareja."
-    ],
-    "dims": [
-      {
-        "title": "Compromiso y proyecto",
-        "questions": [
-          "Los dos se ven compartiendo un futuro, no solo el momento de ahora.",
-          "Hay planes concretos juntos: vivienda, cuidado mutuo, vida diaria o proyectos a mediano plazo.",
-          "Si hay un problema grave, la primera idea de ambos es cuidar la relación, no abandonarla enseguida."
-        ]
-      },
-      {
-        "title": "Comunicación y manejo de conflictos",
-        "questions": [
-          "Pueden hablar de desacuerdos sin insultarse ni dejarse de hablar por mucho tiempo.",
-          "Cuando hay un conflicto, buscan entenderse y llegar a un acuerdo, no solo ganar la pelea.",
-          "Pueden pedir perdón y reparar después de una pelea."
-        ]
-      },
-      {
-        "title": "Intimidad emocional",
-        "questions": [
-          "Pueden contar miedos, tristezas o necesidades sin que el otro se burle o se cierre.",
-          "Sienten que el otro los conoce de verdad, no solo en lo superficial.",
-          "Hay gestos de cariño y de interés en el día a día, no solo en momentos especiales."
-        ]
-      },
-      {
-        "title": "Intimidad sexual",
-        "questions": [
-          "La vida sexual, si la hay, se habla con respeto. Se tienen en cuenta el gusto y el límite de los dos.",
-          "El deseo sexual es una parte importante, pero no es la única razón por la que se buscan.",
-          "Nadie es presionado, humillado o ignorado en lo íntimo."
-        ]
-      },
-      {
-        "title": "Confianza y exclusividad",
-        "questions": [
-          "Hay un acuerdo claro sobre fidelidad, o sobre lo que cada uno espera en lo afectivo y sexual.",
-          "Confían el uno en el otro: no hay mentiras frecuentes ni una duda constante que no se puede hablar.",
-          "No tienen que vigilar el teléfono o los pasos del otro para sentir un poco de paz."
-        ]
-      },
-      {
-        "title": "Respeto y trato",
-        "questions": [
-          "Se hablan con respeto, incluso cuando están enfadados.",
-          "Nadie humilla, amenaza, controla o da miedo al otro.",
-          "Se valoran como personas, no solo por lo que dan o por lo que sirven."
-        ]
-      },
-      {
-        "title": "Apoyo en la salud y en momentos difíciles",
-        "questions": [
-          "Si uno se enferma o está en crisis, el otro acompaña y ayuda.",
-          "En un mal momento de dinero, trabajo, salud mental o familia, se sienten un equipo.",
-          "El cuidado aparece en la vida diaria, no solo cuando hay ganas de intimidad."
-        ]
-      },
-      {
-        "title": "Dinero y decisiones",
-        "questions": [
-          "El dinero importante se habla con claridad, no se esconde.",
-          "Las decisiones grandes se toman entre los dos, no las impone uno solo.",
-          "Hay un acuerdo justo sobre gastos, deudas y responsabilidades."
-        ]
-      },
-      {
-        "title": "Familia y entorno",
-        "questions": [
-          "Se presentan como pareja ante la familia, los amigos o la vida diaria, no solo en privado.",
-          "La familia o los amigos no tienen más poder que la pareja para decidir lo de los dos.",
-          "Se respetan los lazos de cada uno, sin aislar al otro de su gente."
-        ]
-      },
-      {
-        "title": "Reciprocidad",
-        "questions": [
-          "Los dos invierten tiempo y energía de forma parecida. No es uno solo quien carga con todo.",
-          "El cuidado, el cariño y el esfuerzo van en los dos sentidos.",
-          "Los dos se sienten importantes en la relación. No es uno quien siempre pide y el otro quien siempre cede."
-        ]
-      }
-    ],
-    "profiles": [
-      {
-        "title": "Pareja sólida",
-        "text": "Esta relación se parece a una pareja sólida. Qué esperar: puedes esperar cuidado, respeto, conversación y un proyecto compartido. Nadie es perfecto, y pueden existir temas a mejorar. Qué hacer: sigan cuidando lo que ya funciona y hablen de lo que esté a medias. Buscar a un profesional de pareja no es urgente. Pueden ir si quieren fortalecerse todavía más, sobre todo si hay hijos y quieren acordar mejor la crianza."
-      },
-      {
-        "title": "Pareja en crisis que se puede trabajar",
-        "text": "Hay un vínculo real, pero hay áreas lastimadas o estancadas. Esto se parece a una pareja en crisis que aún se puede trabajar, si los dos quieren. Qué esperar: no asumas que todo está resuelto, ni que ya no hay nada que hacer. Mira las áreas más bajas: ahí suele estar lo que más duele. Qué hacer: hablen con calma de esos puntos. Puede ayudar una consulta de pareja si llevan tiempo atascados, si las peleas se repiten, o si solos no logran cambiar. Si además hay hijos, un profesional de familia puede ayudar a ordenar roles y límites."
-      },
-      {
-        "title": "Amistad con atracción",
-        "text": "Hay cariño o compañía, pero faltan un proyecto compartido y una responsabilidad de pareja claros. Esto puede parecerse a una amistad con atracción. Qué esperar: no asumas un futuro de esposos o de pareja comprometida si eso no está hablado y sostenido con hechos. Qué hacer: hablen con honestidad sobre lo que cada uno quiere. Si uno espera una pareja y el otro no puede o no quiere darla, conviene verlo a tiempo. Una consulta de pareja puede ayudar si desean aclarar el vínculo y no están pudiendo hacerlo solos."
-      },
-      {
-        "title": "Relación centrada en lo sexual",
-        "text": "Hoy pesan más la atracción o lo sexual que el cuidado, el futuro y la intimidad emocional. Esto puede ser una relación centrada en lo sexual. Qué esperar: puedes esperar deseo o encuentros, pero no el sostén de una pareja comprometida, a menos que eso cambie de verdad. Qué hacer: está bien si los dos lo quieren así y lo tienen claro. No está bien si uno espera una pareja y el otro no lo está dando. Hablen con claridad. Busquen ayuda profesional si esta situación les hace daño o los deja muy confundidos."
-      },
-      {
-        "title": "El vínculo está débil o desgastado",
-        "text": "El vínculo está débil o desgastado. Qué esperar: no puedes dar por hecha una pareja estable. Qué hacer: revisen si los dos quieren construir algo distinto. Si hay respeto y voluntad, se puede trabajar, a veces con ayuda profesional. Si no hay voluntad de los dos, es preferible no forzar un rol de pareja que no está."
-      },
-      {
-        "title": "Relación dañina",
-        "text": "El trato o la confianza están muy lastimados. Esto no se parece a una pareja segura. Qué esperar: si nada cambia, puede haber más miedo, control o daño. Qué hacer: pon tu seguridad primero. Si hay insultos graves, amenazas, control o violencia, no intentes resolverlo solo con una charla. En ese caso, una consulta de pareja no es el primer paso, porque puede aumentar el riesgo. Busca ayuda y, si hay peligro, llama al 123. También puedes llamar al 155 si hay violencia, o al 106 si necesitas apoyo emocional."
-      }
-    ]
-  },
-  "hijos": {
-    "id": "hijos",
-    "theme": "pareja",
-    "title": "Cuando hay hijos o una familia ensamblada",
-    "kicker": "Opcional",
-    "short": "12 señales. Responde solo si en la relación hay hijos de él, de ella, de ambos, o una familia ensamblada.",
-    "intro": [
-      "Cuando hay hijos, la pareja ya no es solo cosa de dos. Los hijos traen historia, miedos y lealtades. Eso ocurre si los hijos son de él, de ella o de ambos.",
-      "Una familia ensamblada es una familia donde hay hijos de una relación anterior, y a veces también hijos de la nueva pareja. En esas familias, los vínculos tardan. Eso es frecuente, no es un fracaso automático.",
-      "Lo sano es que el papá o la mamá biológica siga siendo el adulto responsable principal de sus hijos. El padrastro o la madrastra acompaña y respeta. No reemplaza al otro padre o a la otra madre, y no compite por el amor del hijo.",
-      "Esta parte es opcional y no cambia el puntaje de pareja."
-    ],
-    "dims": [
-      {
-        "title": "El lugar de cada adulto y la crianza",
-        "questions": [
-          "Está claro que el papá o la mamá biológica sigue siendo el adulto responsable principal de sus hijos.",
-          "El padrastro o la madrastra tiene un lugar respetado, sin pretender reemplazar al otro padre o a la otra madre.",
-          "Las reglas de crianza se hablan en pareja, y no se cambian a escondidas delante de los hijos."
-        ]
-      },
-      {
-        "title": "Celos, lealtad y vínculo con los hijos",
-        "questions": [
-          "Los hijos no son usados para dar celos, para chantajear o para aliarse contra la pareja.",
-          "Se acepta que un hijo pueda tardar en tomar confianza con la nueva pareja.",
-          "Nadie exige al hijo que elija entre su papá, su mamá y la nueva pareja."
-        ]
-      },
-      {
-        "title": "Relación con el ex y dinero para los hijos",
-        "questions": [
-          "El contacto con el ex, si existe, se mantiene en lo que toca a los hijos, con límites claros y respeto.",
-          "El dinero para los hijos se habla con claridad y no se convierte en una pelea constante de la pareja.",
-          "Los hijos no se usan como mensajeros de quejas, de plata o de conflictos con el ex."
-        ]
-      },
-      {
-        "title": "Tiempo de pareja y respeto a los hijos del otro",
-        "questions": [
-          "La pareja reserva algo de tiempo para los dos. No todo el tiempo queda solo para los hijos.",
-          "Hay respeto hacia los hijos del otro: no se les insulta, no se les ignora y no se les obliga a demostrar cariño.",
-          "Cuando un hijo está en crisis o hay un conflicto de crianza, la pareja trata de sostenerse como equipo, no como rivales."
-        ]
-      }
-    ],
-    "profiles": [
-      {
-        "title": "Convivencia sana con los hijos",
-        "text": "Hay un orden sano: cada adulto tiene su lugar, se respeta a los hijos y la pareja no queda borrada. Qué esperar: igual pueden aparecer celos o lealtades divididas, porque eso es frecuente cuando hay hijos de una relación anterior. Qué hacer: sigan hablando las reglas, cuiden el tiempo de pareja y no exijan a los hijos un cariño inmediato. Buscar ayuda profesional no es urgente, pero puede servir si quieren prevenir conflictos al convivir o al educar juntos."
-      },
-      {
-        "title": "Familia ensamblada en ajuste",
-        "text": "Esta etapa es frecuente. En una familia ensamblada, los vínculos no se forman de un día para otro. Qué esperar: puede haber celos, comparaciones, cansancio o duda sobre quién pone las reglas. Eso no significa que la pareja esté fallando. Significa que hay que cuidar el lugar de cada uno. Qué hacer: acuerden la crianza en privado, respeten al otro padre o madre, y no fuercen la confianza de los hijos. Si las peleas se repiten, puede ayudar una consulta de pareja o de familia."
-      },
-      {
-        "title": "Tensión fuerte que conviene trabajar",
-        "text": "Los hijos están afectando mucho la relación, o la relación está afectando a los hijos. Qué esperar: si no se ordenan los roles, el dinero, el ex o la autoridad, las peleas suelen crecer. Qué hacer: no dejen este tema solo para el momento de la discusión. Hablen de acuerdos concretos. Es un buen momento para buscar ayuda profesional de familia o de pareja, siempre que no haya violencia."
-      },
-      {
-        "title": "Dinámica dañina para la pareja o para los hijos",
-        "text": "Hay señales de que los hijos, o el conflicto alrededor de ellos, están quedando en un lugar que hace daño. Qué esperar: pueden aumentar los celos, las alianzas, el maltrato verbal o la pelea por la autoridad. Qué hacer: protege a los niños y también tu trato de pareja. Ningún hijo debe ser mensajero, arma o juez. Si hay miedo, insultos o violencia, busca ayuda primero. Si no hay violencia, puede ayudar una consulta de familia o de pareja con alguien que conozca familias ensambladas."
-      }
-    ]
-  },
-  "amistad": {
-    "id": "amistad",
-    "theme": "amistad",
-    "title": "Amistad",
-    "kicker": "Esmeralda",
-    "short": "18 señales en 6 áreas.",
-    "intro": [
-      "Un amigo verdadero cuida, escucha y está de los dos lados. Un amigo de ocasión o de conveniencia aparece a ratos, o cuando le sirve. Un conocido puede ser amable, pero no es un amigo."
-    ],
-    "dims": [
-      {
-        "title": "Presencia y constancia",
-        "questions": [
-          "Te busca también cuando no necesita un favor.",
-          "Mantiene el contacto con cierta constancia. No desaparece por mucho tiempo sin razón.",
-          "Los planes se cumplen. No se quedan solo en promesas."
-        ]
-      },
-      {
-        "title": "Confianza y confidencialidad",
-        "questions": [
-          "Puedes contarle algo importante y te escucha de verdad.",
-          "Cuida lo que le confías y no lo cuenta a otros.",
-          "Puedes ser sincero sin miedo a que te exponga o se burle."
-        ]
-      },
-      {
-        "title": "Apoyo mutuo",
-        "questions": [
-          "Está cuando pasas un mal momento, aunque no pueda resolverlo todo.",
-          "Celebra tus cosas buenas, no solo aparece en los problemas.",
-          "En una dificultad, sientes que puedes pedirle apoyo."
-        ]
-      },
-      {
-        "title": "Respeto y límites",
-        "questions": [
-          "Respeta tu tiempo, tu espacio y tus límites.",
-          "No habla mal de ti a tus espaldas.",
-          "Acepta un no, y no te presiona para hacer lo que no quieres."
-        ]
-      },
-      {
-        "title": "Reciprocidad",
-        "questions": [
-          "La relación es de los dos: no eres tú quien siempre da y el otro solo recibe.",
-          "Después de estar con esa persona, te sientes en calma, no usado ni confundido.",
-          "También puede pedirte ayuda, y hay un intercambio justo."
-        ]
-      },
-      {
-        "title": "Honestidad y calidad del vínculo",
-        "questions": [
-          "Te dice la verdad con respeto, no te manipula.",
-          "Pueden tener una diferencia y seguir siendo amigos.",
-          "Te sientes auténtico con esa persona. No tienes que fingir quién eres."
-        ]
-      }
-    ],
-    "profiles": [
-      {
-        "title": "Amigo verdadero",
-        "text": "Esto se parece a un amigo verdadero. Qué esperar: puedes esperar apoyo, sinceridad y compañía. Qué hacer: cuida tú también esa amistad. No hace falta una consulta para una amistad sana, pero sí conviene hablar si algo empieza a doler."
-      },
-      {
-        "title": "Amistad que se puede cuidar",
-        "text": "Hay un vínculo real, pero está irregular o a medias. Qué esperar: a veces habrá apoyo, y a veces se sentirá lejana o desigual. Qué hacer: habla de lo que necesitas, sin acusar. Si los dos quieren, esta amistad se puede cuidar y mejorar."
-      },
-      {
-        "title": "Amigo de ocasión o de conveniencia",
-        "text": "Aparece en algunos momentos, o cuando le sirve. Qué esperar: puede haber buenos ratos, pero el apoyo no es estable. Qué hacer: fíjate si la relación es justa para ti. Puedes reducir lo que das si tú siempre cargas con todo."
-      },
-      {
-        "title": "Amigo de ocasión o conocido cercano",
-        "text": "Esta persona se parece más a un conocido, o a un amigo de ocasión. Qué esperar: no esperes el mismo apoyo que de un amigo de verdad. Qué hacer: está bien compartir cosas ligeras. No entregues tu confianza o tu dinero como si ya hubiera una amistad sólida."
-      },
-      {
-        "title": "Relación de amistad dañina",
-        "text": "El respeto o la confianza están muy lastimados. Qué esperar: puedes salir herido, usado o confundido. Qué hacer: pon límites. No es necesario mantener una amistad que te hace daño. Si hay miedo, control o abuso, busca ayuda."
-      }
-    ]
-  },
-  "vecinos": {
-    "id": "vecinos",
-    "theme": "amistad",
-    "title": "Vecinos, conocidos y compañeros",
-    "kicker": "Esmeralda",
-    "short": "9 señales. Un vecino o un compañero no tiene que ser un amigo.",
-    "intro": [
-      "Un conocido, un vecino o un compañero de trabajo no tiene que ser un amigo. Lo sano es el respeto y los acuerdos claros. El riesgo es confundir esa cercanía con una amistad o con una relación de familia."
-    ],
-    "dims": [
-      {
-        "title": "Respeto y acuerdos",
-        "questions": [
-          "Son respetuosos y educados contigo.",
-          "Cumplen lo que acuerdan en el trabajo, el barrio o el grupo.",
-          "No se aprovechan de tu confianza ni de tu dinero."
-        ]
-      },
-      {
-        "title": "El lugar de la relación",
-        "questions": [
-          "La relación se queda en su lugar: compañero, vecino o conocido. No exige la intimidad de un amigo o de la familia.",
-          "No te presionan para contar tu vida privada.",
-          "Te sientes cómodo con esa cercanía. No sales confundido sobre qué son."
-        ]
-      },
-      {
-        "title": "Cuidado de tu distancia",
-        "questions": [
-          "Puedes decir que no sin que haya un mal ambiente duradero.",
-          "No te piden secretos, plata o favores que no corresponden a un conocido.",
-          "Después de tratar con esa persona, te sientes en paz, no usado."
-        ]
-      }
-    ],
-    "profiles": [
-      {
-        "title": "Buen conocido o compañero",
-        "text": "Es un buen conocido o compañero. Qué esperar: puedes esperar respeto y que se cumplan los acuerdos. Qué hacer: no le pidas, ni le entregues, la cercanía de un amigo o de la familia."
-      },
-      {
-        "title": "Señales mezcladas",
-        "text": "Hay señales mezcladas. Qué esperar: a veces se comporta como amigo y a veces como un desconocido. Qué hacer: ve despacio. No entregues confianza de más hasta ver si la relación es estable."
-      },
-      {
-        "title": "Conviene cuidar la distancia",
-        "text": "Cuida tu distancia. Qué esperar: esta persona no está ofreciendo un trato seguro de compañero o conocido. Qué hacer: no confíes tu vida privada, tu dinero o tus decisiones a alguien que no te trata con respeto, o que quiere una cercanía que no le corresponde."
-      }
-    ]
-  },
-  "hermanos": {
-    "id": "hermanos",
-    "theme": "hermanos",
-    "title": "Hermanos",
-    "kicker": "Naranja",
-    "short": "18 señales en 6 áreas.",
-    "intro": [
-      "Ser hermanos no basta por sí solo. Una buena relación se nota en el respeto, el apoyo y la justicia, no solo en compartir apellido o recuerdos de infancia."
-    ],
-    "dims": [
-      {
-        "title": "Contacto y presencia",
-        "questions": [
-          "Mantienen el contacto aunque no necesiten un favor.",
-          "En fechas o momentos importantes, hay algún gesto de presencia.",
-          "El silencio largo, si ocurre, no es la única forma de relacionarse."
-        ]
-      },
-      {
-        "title": "Respeto y trato",
-        "questions": [
-          "Hay respeto, aunque no siempre estén de acuerdo.",
-          "No hay humillaciones, burlas crueles ni miedo al hablar.",
-          "Se reconocen como adultos, no solo como el rol que tenían de niños."
-        ]
-      },
-      {
-        "title": "Apoyo y lealtad",
-        "questions": [
-          "Se interesan por el bienestar del otro, no solo por la obligación familiar.",
-          "Se apoyan cuando de verdad importa.",
-          "En una dificultad grande, puedes contar con esa persona, o ella puede contar contigo."
-        ]
-      },
-      {
-        "title": "Justicia y límites en la familia",
-        "questions": [
-          "No usan a la familia para controlar, humillar o poner a uno en contra del otro.",
-          "En asuntos de la familia, como el cuidado u otras responsabilidades, buscan ser justos, o al menos hablarlo.",
-          "Cada uno puede tener su propia vida, sin culpas constantes."
-        ]
-      },
-      {
-        "title": "Conflicto y reparación",
-        "questions": [
-          "Pueden ser honestos sin ser crueles.",
-          "Después de una pelea, pueden pedir perdón o hacer las paces.",
-          "Un desacuerdo no se convierte en un corte definitivo o en una guerra familiar."
-        ]
-      },
-      {
-        "title": "Espacio e independencia",
-        "questions": [
-          "Respetan tu pareja, tu casa o tus decisiones, aunque piensen distinto.",
-          "No exigen una cercanía que tú no puedes o no quieres dar.",
-          "El lazo se siente elegido también, no solo obligado."
-        ]
-      }
-    ],
-    "profiles": [
-      {
-        "title": "Relación de hermanos sólida",
-        "text": "Esto es una buena relación de hermanos. Qué esperar: puedes esperar respeto, apoyo y un lazo que se cuida. Qué hacer: sigan hablando y siendo justos el uno con el otro. Una consulta familiar no es urgente, aunque puede ayudar si hay heridas antiguas que quieren mirar con calma."
-      },
-      {
-        "title": "Vínculo que se puede cuidar y mejorar",
-        "text": "El lazo familiar existe, pero falta cuidado, respeto o equilibrio. Qué esperar: puede haber cariño y, al mismo tiempo, distancia o resentimiento. Qué hacer: hablen de lo que duele, sin atacar. Si el conflicto se arrastra por años o involucra a toda la familia, un profesional de familia puede ayudar."
-      },
-      {
-        "title": "Lazo familiar distante o desigual",
-        "text": "Son hermanos, pero el vínculo está distante o es poco recíproco. Qué esperar: no asumas un apoyo que hoy no está. Qué hacer: puedes mantener un contacto respetuoso, y al mismo tiempo cuidar tu paz. No tienes que forzar una cercanía que la otra persona no ofrece."
-      },
-      {
-        "title": "Relación de hermanos dañina",
-        "text": "Ser familia no obliga a aguantar falta de respeto. Qué esperar: el daño puede seguir si no hay límites. Qué hacer: puedes querer a tu hermano y, aun así, cuidar tu paz. Pon límites claros, reduce el contacto si hace falta, y busca ayuda si hay miedo, control o maltrato. Una consulta familiar solo es conveniente si hay seguridad para hablar."
-      }
-    ]
-  },
-  "papa": {
-    "id": "papa",
-    "theme": "papa",
-    "title": "Papá e hijo",
-    "kicker": "Azul",
-    "short": "18 señales en 6 áreas. Sirve si el hijo ya es joven o adulto.",
-    "intro": [
-      "Una relación sana se mira desde los dos lados: el del papá y el del hijo. Estas señales sirven si el hijo ya es joven o adulto. Un niño pequeño necesita cuidado y protección del adulto; no se le pide lo mismo que a un hijo mayor.",
-      "Puedes responder pensando en ti como papá, o pensando en tu relación con tu papá. Lo importante es mirar cómo se tratan los dos, no solo lo que uno espera del otro."
-    ],
-    "dims": [
-      {
-        "title": "Respeto mutuo",
-        "questions": [
-          "Hay respeto de los dos lados: nadie humilla al otro ni lo trata como si no valiera.",
-          "Pueden hablar sin gritos y sin miedo.",
-          "Se escuchan, aunque no estén de acuerdo."
-        ]
-      },
-      {
-        "title": "Cariño y reconocimiento",
-        "questions": [
-          "El cariño se muestra con palabras o con hechos, no solo con plata o con favores.",
-          "Cada uno se interesa por la vida del otro, no solo cuando necesita algo.",
-          "Hay reconocimiento de lo bueno, no solo críticas."
-        ]
-      },
-      {
-        "title": "Comunicación",
-        "questions": [
-          "Pueden hablar de temas difíciles, como salud, dinero, decisiones o emociones, sin que la conversación se rompa enseguida.",
-          "Se pueden reconocer errores y pedir perdón.",
-          "Hay espacio para decir “esto me duele” sin que el otro lo tome solo como un ataque."
-        ]
-      },
-      {
-        "title": "Límites y autonomía",
-        "questions": [
-          "Se respetan los límites: visitas, dinero, intimidad y decisiones de cada uno.",
-          "Cada uno puede tener su propia vida, como el estudio, el trabajo, la pareja o los amigos, sin perder el vínculo.",
-          "El papá acompaña, pero no decide toda la vida del hijo joven o adulto."
-        ]
-      },
-      {
-        "title": "Apoyo en las dificultades",
-        "questions": [
-          "En los momentos difíciles hay acompañamiento, no abandono ni chantaje.",
-          "Si hay ayuda de dinero, vivienda o cuidado, los acuerdos son claros y se cumplen.",
-          "El apoyo no se cobra después con culpas o con control."
-        ]
-      },
-      {
-        "title": "Culpa, control y libertad",
-        "questions": [
-          "El papá no usa la culpa para controlar. El hijo no usa el silencio solo para castigar, sin explicar.",
-          "Nadie amenaza con el cariño, por ejemplo diciendo: si me quisieras, harías esto.",
-          "Hay libertad para pensar distinto sin que eso rompa el lazo."
-        ]
-      }
-    ],
-    "profiles": [
-      {
-        "title": "Relación sana de papá e hijo",
-        "text": "Hay respeto, cariño y espacio para los dos. Qué esperar: el papá puede acompañar sin controlar, y el hijo puede vivir su vida sin perder el vínculo. Qué hacer: sigan hablando y reconociendo lo bueno. Una consulta familiar no es urgente. Pueden ir si quieren fortalecer la comunicación."
-      },
-      {
-        "title": "Vínculo con tensiones que se pueden trabajar",
-        "text": "Hay amor o hay contacto, pero faltan respeto, límites o conversación. Qué esperar: pueden quererse y, al mismo tiempo, hacerse daño sin querer. Qué hacer: hablen de lo que cada uno necesita, y de lo que ya no se puede imponer. Una consulta familiar suele ser útil en estos casos, si los dos pueden hablar sin miedo."
-      },
-      {
-        "title": "Relación distante o marcada por el control",
-        "text": "El vínculo existe, pero está marcado por la distancia, la culpa o el control. Qué esperar: si nada cambia, pueden crecer el rencor o el silencio. El hijo puede sentirse niño aunque ya sea adulto, o el papá puede sentirse excluido y reaccionar con presión. Qué hacer: nombra lo que duele y pide límites claros. Un adulto necesita autonomía, y un papá puede seguir siendo importante sin decidirlo todo. Si solos no logran ese equilibrio, puede ayudar una consulta familiar o individual."
-      },
-      {
-        "title": "Relación de papá e hijo dañina",
-        "text": "El vínculo está lastimado. Qué esperar: el miedo, la culpa o el maltrato no se van solos. Qué hacer: no tienes que aceptar gritos, culpa o control para “ser buen hijo” o “ser buen papá”. Pon límites. Si hay miedo o maltrato, busca ayuda. Una consulta familiar no debe ser el primer paso cuando hay violencia; primero está la seguridad."
-      }
-    ]
-  },
-  "alarmas": [
-    "Maltrato físico: golpes, empujones o amenazas de hacerte daño.",
-    "Maltrato con palabras: insultos, gritos que buscan humillarte, o burla constante.",
-    "Manipulación: te hace sentir culpable, confundido o con miedo para que hagas lo que esa persona quiere.",
-    "Aprovechamiento económico: te pide plata una y otra vez, controla tu dinero o se aprovecha de tu trabajo sin un acuerdo justo.",
-    "Aislamiento: te aleja de tu familia, de tus amigos o de quienes te pueden ayudar.",
-    "Control: revisa tu teléfono, te vigila o te dice con quién puedes hablar."
-  ]
-};</script>
+  <script>window.DATA = {"muestra":{"id":"muestra","theme":"pareja","title":"Muestra de pareja","kicker":"Gratis","short":"8 señales de pareja. Es una muestra, no el test completo.","intro":["Esta es una muestra gratis de 8 señales de pareja. No es el test completo.","Responde con honestidad, mirando lo que ocurre la mayoría de las veces, no un solo día.","Al final verás un resultado corto. Para un perfil más preciso, y para mirar también hijos, amistades y vecinos, hermanos o papá e hijo, necesitas el test completo."],"dims":[{"title":"Compromiso y proyecto","questions":["Los dos se ven compartiendo un futuro, no solo el momento de ahora."]},{"title":"Comunicación y manejo de conflictos","questions":["Pueden hablar de desacuerdos sin insultarse ni dejarse de hablar por mucho tiempo."]},{"title":"Intimidad emocional","questions":["Pueden contar miedos, tristezas o necesidades sin que el otro se burle o se cierre."]},{"title":"Confianza y exclusividad","questions":["Hay un acuerdo claro sobre fidelidad, o sobre lo que cada uno espera en lo afectivo y sexual."]},{"title":"Respeto y trato","questions":["Se hablan con respeto, incluso cuando están enfadados."]},{"title":"Apoyo en la salud y en momentos difíciles","questions":["Si uno se enferma o está en crisis, el otro acompaña y ayuda."]},{"title":"Dinero y decisiones","questions":["El dinero importante se habla con claridad, no se esconde."]},{"title":"Reciprocidad","questions":["Los dos invierten tiempo y energía de forma parecida. No es uno solo quien carga con todo."]}],"profiles":[{"title":"Muestra en verde","text":"En estas 8 señales hay bastante que se sostiene. Qué esperar: esto es solo una muestra, no un perfil completo de la relación. Qué hacer: si quieres ver las 30 señales de pareja y las demás relaciones, abre el test completo con tu código, o escríbeme para comprarlo."},{"title":"Muestra en amarillo","text":"En estas 8 señales hay algo, pero faltan piezas importantes. Qué esperar: la muestra no alcanza para un perfil completo. Puede haber áreas más fuertes o más lastimadas que aquí no se ven. Qué hacer: el test completo mira 10 áreas de pareja y también otras relaciones, con más claridad."},{"title":"Muestra en rojo","text":"Estas 8 señales se ven lastimadas o débiles. Qué esperar: esto es una alerta corta, no un diagnóstico. Qué hacer: si hay miedo, violencia o peligro, ve primero a Señales de alarma y pide ayuda. Si quieres entender la relación área por área, el test completo te da un perfil más claro."}]},"alarmas":["Maltrato físico: golpes, empujones o amenazas de hacerte daño.","Maltrato con palabras: insultos, gritos que buscan humillarte, o burla constante.","Manipulación: te hace sentir culpable, confundido o con miedo para que hagas lo que esa persona quiere.","Aprovechamiento económico: te pide plata una y otra vez, controla tu dinero o se aprovecha de tu trabajo sin un acuerdo justo.","Aislamiento: te aleja de tu familia, de tus amigos o de quienes te pueden ayudar.","Control: revisa tu teléfono, te vigila o te dice con quién puedes hablar."]};
+  window.AQA_PACK = {"v":1,"salt":"Oxqv+19eAWRp1r9U0mqZvw==","iter":100000,"iv":"9sXM9lAiq6/rJmYl","payload":"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","wraps":{"337e3150887279eb":{"iv":"gFB/1Cs47Yi56Nwb","ct":"sCnfGTW996OP719sU8xs1J6Za9MigoL4ZcN/zZr0ZDmD+rnW+vRu3VifYxI2QtJO"},"af0a98f83861eb4a":{"iv":"RYO8E3cjWTcOXTky","ct":"eT5GsikB5gq8NulEzl6/dZ1mV698JKv+mmbkz/DSumyRr4oTTTvVMqp2p1LFjHDv"},"cdedab9e45e97748":{"iv":"l2dpUrBGHnQsDYyk","ct":"SMT2wXlT+lriTefxTe9uWz7TEyGiiKjRPwXdOXU5EO9iJMdVMQmUaPqqqBGARzLK"},"78328f9e3cbf4575":{"iv":"lZG/htmiOSM59wv8","ct":"OCZwlvE5db2nThQy2w66QMVA1SHjMbGUBRtbmrfOI3zLbr/jV/jzIUMcCe91PMA7"},"9df721fe672e9358":{"iv":"md8bmPwSFnlP/55T","ct":"qh0ZE7upMCsBg/D7k0rcD7WdVTRUKlmXqPYI5fWEFb+WQ/IpL/ukIOB6/iAC0wR6"},"81a8fa7e08ce466b":{"iv":"+HnOsbCM/rH1AfTY","ct":"KLj0pgJvZWfmJvv/FOsT2X3MBhwiVxpJdd+Oj+snowa7FIGx9jELrYZrnZd9ZdZM"},"9df1138e3646f922":{"iv":"qAEuUH6i576Tdlxv","ct":"Or+Fw8zrdK1NjKpySjc3HaLSXILWytQqDgW0Qb/rgWeP5jWznI4dX1a+hC8QXRm0"},"73fded30f722c52d":{"iv":"Aoc4Zfs2ahVhjBGw","ct":"uxSUG9jharl8QLsfEauNKTzApjxWFbH0HrmPFwCKpRIMvjqLbhSqlNBwBeD9ES5q"},"890d3fc3b9744640":{"iv":"zQYLkGocco93anBQ","ct":"MFMx/sSu3AsA9Jqz5Al27ZLAVWWQLmtEQfmhiqUACUmL2dCzHSFDoqVecoFjibqN"},"bf055660e7947917":{"iv":"y+a8VpGeEq4LRIMN","ct":"OmWxTmqWYsSnpb3QhCz4NDYIklmq3LJ+7l9cmrFyTeo4Hxgv6qnqCE2AcpI6fckd"},"d9ce260c896f0e61":{"iv":"CQuFluN50om6gftL","ct":"Akr99GQVpLK+igekutI+iIqoedd5G3oW1FJ3xJ+3xpeM1yhkjZnEwjRnSJk6q12Q"},"da99a218cd5be3b4":{"iv":"XDIjsU6NHlOJDov4","ct":"U4K/cEBcYEZgegYBVcAXTodJJMkpL2pOrKhGCBrzv2/HxHiPwNXwsjYEYC2C5fFa"},"73bd4c15b2559793":{"iv":"UOOZhz5usL/oUykm","ct":"Gv5Lbt9at5eC2vy3HxbtA+qzyv+7Z5bOe27g+m5nhws3UaiA7oFlRDCiUK2pWZ77"},"eca29b4cf7df0dde":{"iv":"6rT8Lq2DqCXHR10/","ct":"CamclbIOcleAMH9YLGwj1KgQ7qt408xWg6ColIZWKolh6eiV1zdAcxYOS4xD1pYL"},"312ef4f5b1498b17":{"iv":"76n1VLGCy0A62NXY","ct":"ekqgM2vP5NciFEqPbu6eE9Jdj+yJf6nQv4srktSjlttWfjGBG6DzFkoapyPwaP/1"},"a7a6c409b1396148":{"iv":"QGxK2v4JGnUBGYzH","ct":"kOZw/nXURKzAveXk00aGgu2wLX2HmpKIyvxWwq8+q4KogT+cU5guonyIdAU8B0UC"},"aaf4a977e4cbc91f":{"iv":"aSi+rm8nLG66ML63","ct":"tK7vaDQVhfgwFXVGozYajp50PlPFiKYglLYg9K634Ykbo/CbAycY4hIpfA5zM/A2"},"ef3666101e810d95":{"iv":"GNPpq4uORR8bINGB","ct":"VsrHmVkH/VE7CfnmhvPOA8Z1i1CKMvNT4I7nXdAc0dGm4pt861XME/kPqOOaRdZF"},"026f1df9815640b6":{"iv":"GrianwoT8kkdECBR","ct":"MMDbJ5Yz3U0QcEQ0NMcxWnlLgQWLkRZjeWhxqJDzpGsN9RpaCDu4cVzrZtbN+ahb"},"ff63f85eeed9f122":{"iv":"If8xJ08cjRbPhPzq","ct":"GUAFQ8yIh/JSbdpd2pZkcvS6BlqQUYgGkNsSvSxAcX5tuAZochD1POzsP/RNy/oA"},"67ef85de6430164a":{"iv":"K9AI+eB698jAejad","ct":"MM8vazj1y5F12G+nd2uQM5o4RpuObriwtFOv21ZXfNXQ/IzBCsU5takNG681fw10"},"50d8d586d2969f3e":{"iv":"jDbyqvX+3O9WPU8C","ct":"3xHzVq4ykkHOieZkpUH5hH62+KkUeATdLiAnzhTtNb0E/rsYcCp9yYd5WYGZEEg7"},"2eca83d2a0d5ae6d":{"iv":"gb0YTXs1jyjCWmNp","ct":"68V5YUFGfuKKmtV1Us9smU2aqoT8gLTPL2tINJT0oqOYkHIZQxFVpZXKz8PiN8eT"},"06583d96d829b51b":{"iv":"Nlwmn/TeOpV5WS2Q","ct":"wLzND6S1OeIpbMclig/BiZONDLMsXgoB8mvbDJN9sNsCENqMaWmNpm3r85xmGI2A"},"27141b3fc9b40dc4":{"iv":"W09ywY30+ReY57Dz","ct":"puslkSY/eQEyiuxYEXrG9Vle5wN/4cp7I/dJFo+aSR0cyPsqN2dPjA/exKy/CEsT"},"a2794db711be1ec7":{"iv":"vvPavEOQ9hv7RSQO","ct":"nmdGc6XiRe7evv06JMgL4gruYMk/8gbqtnsC4vqiWKWU756N/63dGVukuO8eMat7"},"87956ae4e36c370f":{"iv":"ooT/PVnLWzNLeYaE","ct":"uK6yzvsQ2uDiywivb1h7QFGqXZciW+ORqZJff7RtBp0H5yn/0yl4k6bB54iaUMa6"},"b1b778564a271a6e":{"iv":"8re9GjDejWCYNEYx","ct":"2b5Z2u0vZyeY0gQ3xyoiXkU0wFx2hStyhqEAZtXY+cHnP2yUHEMBwnRf7IoV3TuI"},"2079bdef9683a5b9":{"iv":"J5ohittXviffw9CA","ct":"UaspyeeT34c5poCuubR2lozNYRgxIMzx4PF7J1jq5GtgWiPwQ88W95dvMmvgoywi"},"c53db95eef2ffb7a":{"iv":"s0okdNa8ywGOmAtc","ct":"slsub3Oz1q9xvtp8q9WizmGvjAxxLbGbu8kp3sk1eJV+9FXP7Q2SoQn5TDoXuv+o"},"4859fde783eb3fc0":{"iv":"6OBcaV9KYpfpIOeG","ct":"dZwZutLjMfv2k6trypm0xDyeRxcfBtICXoo0E7vbuo07G9UCTz8YpMr27cExWA5+"},"9ff736ad4a4ed1da":{"iv":"6q1f6EOidxySrRG9","ct":"Uc31y2u+4Y4dE17xm0pPWgTHvpO1i4439i/3WinyVtqELlwiIQlLSknTrhriaUau"},"dfc32e02a57493b6":{"iv":"3pN4gZZvfe6sOTYC","ct":"IxDfRPLjcen3DOg/WB7yZZT4zloyraWjvH3DnZ/pvyYJwwaikHojNSnuSFsGYXyD"},"62c7cb783c1560c5":{"iv":"EvVLWQZdpsHtL/yB","ct":"BWtyEn5au+G1FzvUA/LiMQ+b5f7Tfow1G9b8+Y4Qm9oMugZDfX9yACNWLK8nZ911"},"2b5260081451e65c":{"iv":"3TXlQJJemIrofAlq","ct":"hSeTWKsEUfRkuhkqdfGN2OFannp09r3s5KfNzSleepF06cbeN1d2WHSc5MjEhDYF"},"5a8b01fd91832465":{"iv":"Q3WtBheR5J5PvKDY","ct":"D+Nq7C90an+DvKMvmjCJWItElVCNooc9iNvsK/kPf7/ReJrcqK1aF330WcN+PCGh"},"e4c152d70130d170":{"iv":"R7m08i/NgsIj/E5x","ct":"Qir1X79kEpOP3SnVERY+ySe22y6VSP7MbVLcUwjAjvH8t9vdjIOXOwxvW9ixz3/0"},"c1a355a75e0c8606":{"iv":"GltYjS3HdYKCvSpi","ct":"fijhSlFVuNvNeT1WPRVg4aIQozZJBghRlIWEhKCoIgU7kpuwq2OGX12jKL43uliK"},"7717c2f5cd8b45ab":{"iv":"2UM/5Gi25ccsvXq1","ct":"H8PlkPQH6fnk0gye9mX/oISUslwN8bV6DTeAsOZamqfm8NkZYgnVbugBQc/1htpY"},"02a817837df5b622":{"iv":"Mv1ONiKPH81QBTjg","ct":"zai/df0SgLbqLv+mpqH/EShJW9eTCW0wxdSY+lf6xEriru/IFDgJ21vBdEhrNtN/"},"77247db7f4af5387":{"iv":"XG2e6J0iBsVeomHw","ct":"jVDKtqtsg3RKOHqTHqzGox/SUmDJkNYYTV/1uf4xSJOrsjmRdu7rA1KdxTQO7TI7"},"ed394deda40c8a6d":{"iv":"vqzp61ENvIowSmEE","ct":"yRGtoEpnH+kHjEU6/ImE9SlZ3VwLEqkEFdyqUIVBBN3goCDCnyVoSXIhLOWgMXxO"},"0a3511b8448836e9":{"iv":"B9YVvMXJ7QWjUk0X","ct":"vh731xpqElIQUKQ9NUOC7yrGeLQzCvmzKgvk2WeNAF6YNWgClcmE/VK4rr5a9TT3"},"6eb063f7afb04bcc":{"iv":"lcK6pVFTnNdw5wRa","ct":"2p74Oz50AWCXPlhlh5ESz4/CL9OWoI/4pmLWTNSuOXC+nOAsAKZwUiZTNIZ6TQme"},"fb42eeb82e6f761e":{"iv":"+p+bNlBib6/wM9sY","ct":"8oBChm/BICEEIUJe0KSubIcXFHE4w9bWHY79xp3Swy0Hvj10EOeySkGcHr8e6wY0"},"115a69ac8a21bbe3":{"iv":"plPTPYv4PPeTlH96","ct":"vlG1oCteLItlJgD5DMSrKgq3w0bkLADZqbLE0ZuABl5fLmz7NzNubj6janvwnP4z"},"be8a90d60470dfa7":{"iv":"QbBMrRZDwNLTipMJ","ct":"db0QbJhAl7+1RiAey1jLPIH7StGTS9kuDqx/eeSTHahHSTood4Wpx0gGlLiPczGa"},"b0cbf19595ae91ae":{"iv":"l0dhAT/d7GEeSVs+","ct":"xW2Sct8SBpiqeS5DOfp7f4rinUsF+OeaZOnlnqF4NZgATJF6S8LN4I9Vs07o8OLH"},"3fddca4f77f66de3":{"iv":"gUW9uRTP9YuBujLg","ct":"Lr8cY/JVRVmMWtTNNdJNXPpiEA8NfEg/5TLsK1q3s9t5ZQDOIlCbwr66EOTdOpIM"},"99748b613e43338b":{"iv":"snfIoq+EIDADkVsE","ct":"2AILu5htxJexFq+qJvovuN5RMnCQS1g7OVQRyIrgBI2WCz0Gn6V8YOp/clrOdi6K"},"4dadded91125b156":{"iv":"ssRxamTCt8SR7y0I","ct":"TMt92iidJEDEYVrGg4hXJF+W/1yTaNormp8qYAZ68KGu9H26nFvHESazKHxuMxDk"},"dbc520520d137ffb":{"iv":"9OdzK60lc7JxVPdx","ct":"eAZuUgtNPc8+g3Jr4710AST37TCX2jMQ9EaiCDzqd6yGwbQ+fRNJRpHMw+4b+Yq3"},"fb2c44a8681c61a9":{"iv":"D+YWHoTuTiWn+7rQ","ct":"LlWjiiMoy2eJ2flxZcrxpHnKYLX+g9ZXWe+n9QCa96MaaHzpwTIExmFpNzqdjPZM"},"d0ce5f1feff6486a":{"iv":"jQVc+Xqfe+/VRNnl","ct":"gCND7EFqPTTKlatOoNPW0xMF3jPEA+6WwkxaxJvVCsKOHpPhGiF4Xi5jS8vA4z1/"},"8506dbb77f31e9f1":{"iv":"J+SDM029TaaBPeLc","ct":"VFteGc9DWaSCR0ZrvOfO2eqDj1ywTCZy7QDbSjfm/MChb/9SwUMfXA5TYYLhAIaB"},"d61824404c3c647d":{"iv":"WdWe5MCRUbtt1GSI","ct":"sHTCaCAF3O8BzDwBV3hl0ny4X58LRDbGQKQVmtE4ZqaECuC2Ev7H+t6UiY+1+SJ2"},"48feb21d8000cf16":{"iv":"SY7ZNeeFwAr5mmvC","ct":"s8r3qk5Lx4jhHUTfGsLeCs9f6K3A703XZsnI62hJryuhY8G44uCL+Z4KNExOlMEj"},"eb37c6862ec70101":{"iv":"Lxs0XGEyTLIo8066","ct":"WI751cePvbi2OuQM/rg5ERoPp8Zj7vZN/1xRXqDdTzPM0oOdp4NeMHtzfNQgmKcA"},"4aed85628b03edad":{"iv":"tLkbKxCQN/YHkRnh","ct":"oJh4y25Hrdg13VwEg/ITra7pOgKshRuT4UlBtmH7mSLCfbMMbD/jF5DGKLKq38dB"},"17918dfb187e05f2":{"iv":"kyzBVdwf8y5dWmFM","ct":"RH2j2xryEzTVT61+ec0PZkt7W1p4lTVyc2ZZHCwaD6oY7ZLno7K0e7f39XzJ1VqP"},"bac26548f429546e":{"iv":"2Fy5GkX9nRnBcCSd","ct":"CcH7hHJt6sUaRtG3k3uUh66mSIC8aqp4NwFmp/rOZEy9quMZRN+09REQ6kbdSZGY"},"7ccb6f77fcc62724":{"iv":"P0oBDobPfRgcNN7S","ct":"1/3SuR5ZTRlfonuhghtpIZKy+qIRIyXyPBn5aaQtt8eS4bHnN1h8+xA+JaoHDon1"},"5bbeccb949d9e239":{"iv":"bk+MHadyCz/zQEdl","ct":"ZsWgeJq8hWTqG4WnYSG/Maan6pPxjI522dwVvNO++L9DZmbahBQRcH898IKw5MWv"},"d9569a3513a7e671":{"iv":"EK4f33ow+AB7CBtT","ct":"tECaooFKaEIKDMKZCqo6lEaAlrrPijXY3MILJ9+qIFfnIrH5PMFeK3KssyYowj4Z"},"7f3a9b4f54dcf5b9":{"iv":"GbCkZ0sdnOJ7pXzA","ct":"znki0MW7lrgxG2BIDNDGO5W8zTl5b3h7DA9mjkx5zFRbSpGIpgVCd9K+d28n/x++"},"bd285fea91649b72":{"iv":"GXH5KkCf4IrW0rU6","ct":"M+wR08Pdk8Kzv6WB7EGIE08wNUVJg0ArAalzeV59QJbu+IcKfdNMA1omYIrd0zWz"},"5a3ade0cc96044fa":{"iv":"56b0nXKytI1u7ud5","ct":"LkoIzaCxgl7moc+FFE/5QwRIY5Bfz63bUi519+ByZXYnlKpmBORVsfDyXPpjBjw1"},"943699225a5991f7":{"iv":"VHpha+D+m93d8BkJ","ct":"heRIBVfhxKmmWjlJfwWXesLaoiUml/ZCCr+OU/fGTjtaqbc76DK/t8lF+LBZQ1En"},"228d1f263d46287d":{"iv":"/cUQoyyNLmrtEYz3","ct":"Evntj0ehGIqHJ1qRcwxFG31XCvgnxih+mWPHzHMXyyo5UUvqxLP0PAL6K493azSO"},"56ffd20a2d7ff0ad":{"iv":"w8NfMUkSE0O/3QiW","ct":"BVRYrVsVPz7VDMpKUT45QfWBE6M/9dRisX+2d6X98fo/xzJ5NFigoRr6Td58lOM4"},"54a05019ba4db1b5":{"iv":"vY4SrgSTj3/YTQBI","ct":"EIMClzJqjPbOud+WVGug8smbXQCG8HhcmhnvljZa4y4TtpcJ8UtfMrvF9QtCGTAe"},"191b643d75f7bed1":{"iv":"0lSaYRnjciWj58KM","ct":"7K09ipLiXwiRiR/LzVb6SdNe/t7Ytp8MGJrOleiICDduq8RGg0Vn1Ohed1oDku0X"},"f8750fee38bb8f80":{"iv":"/0rcIsoNWEYBA+4D","ct":"p1WjXwtX7P+4d5A1F5UskPEWoKU5SkYHeHM3XhYGU2yyuAXbyZuFjcKNdFHF1uSm"},"ccdd03e04c4233c7":{"iv":"uL7JGrSsxrt9031w","ct":"+AHI9bhFGez8RF7ECtQQ7jiaEgeDGzG7eUVGCbllhslSnO64avn4QDYdwQcj9WHC"},"7e343d98a5847331":{"iv":"UAOWvcVOX1/OpNR3","ct":"+qLnARfRvSw1aC9inc27GFGlLxvpURZBuyKODWJ0ZWyT2bSfL9p5eeBMvNGIwigf"},"3136a419a2b7872c":{"iv":"Ww2T6PHVzaxmFVI+","ct":"QSUJXXa7+dlgQ3cu39kGgaU03ypJIvEaN0ObKKVFyFOxoqlJ4HEbmGq+qyEBl4/k"},"952c8b5ae7429900":{"iv":"k7pN7e4mngPExB9n","ct":"4KPLduv9Gxn4Ji+tQviGOZ8lNdEM8S+AunJ8tk4DU2R1Mai5AtQCvfdffLGnoquC"},"90ef653d16933d6f":{"iv":"P1kJINIrr1ccRnx1","ct":"vrNdP7ji+z2JTwjSYneFuHxRBgjRpzrMUpNcxznP+FgzmTblYgy8Up073IllrfU8"},"94ff3592fd9288f0":{"iv":"K72DIoArQqKRXFNg","ct":"TegFgpilqBXrPoloo6L8I+UU2kZ15Qfa0WhADjlYQYUOM4O8vfL9RJGCVOzAd2vI"},"4be6c78956abd0e0":{"iv":"kXRJXluDv5ohwWzT","ct":"MRYZ+QkiMstqbKGw5XEmKxIrpWwb3hTUaHjRxQ/IKe5q/qOgcqMgmq9VpLfHoKdr"},"cb902a5b46b9ae94":{"iv":"iNYFKjCGH0xIaAgZ","ct":"G6eAb8gRcYAJizmPrnR7KdSmI/Y2mm6bJaYevNgnSDLnce8CWvd+/R6s5ak2zx9F"},"ee1cc0742d54466c":{"iv":"v8UZN4yQJJiBS538","ct":"rjYDEJkFCWnCvNZnY3mrD321pwhxdXXLCf7XtgXHnAPorTZBW7+OOIy/vVKNscNX"},"8e1e39dac739a6cc":{"iv":"Qxr2Xm4MNhfY9j3e","ct":"G6+TOWjKRYJJvY3VMfaFvdqXipjvqN1k6gdUOJn+yHLvQOM19WfuJOBgNNaqfgwY"},"c37cd05e9e23eb5c":{"iv":"Oejoo1NxyOD5RHPF","ct":"eCgEKiKrpEva5N/yN5HuOj86OoPYMc01Xqlw/0rh5mE3/tESzU+ndpflc0Ir2gJS"},"4d445d5042f78cdb":{"iv":"nYM6+8Jz5YigyYkP","ct":"ckb/wVI3sOFy+vWs8eNNhuJXZM3ZPTowmS/HBKaQwN9F/P7r/IZ9C652musDn5wS"},"fe2a09616e16851c":{"iv":"oTQSYBZiY5qXCEqc","ct":"c2jIu+b3oys2OnAmHQgEC/MNAuyvhiDwBbirdrhGEv8+wqR9xg/sNmSXosU4rbI/"},"90f16f71707a8424":{"iv":"pEzbohjeeuCcUBj3","ct":"P78m2964+u6Iaj5yTDvkZInf4u1Y62Km9fOHYKAuKj+vzcynNtmLD2iybppNzzTN"},"4136309663b9ebfd":{"iv":"FKM+SwAPTHIhednw","ct":"x00U9vmYzb5yFhbNsy6Mx1dPXEuPJDhSevCpIIWSWod5ZA7PGpzU5pyn2WjNaqP0"},"8e87f8a35b3ef048":{"iv":"3KMCTK0CFYvgxHjh","ct":"Xp3iZTG5QFbCZQstSWgVS5hnGOfh5a2EygkHkUpPGGFQFw/O7Ykk10cbhSiYJdop"},"24fa19424ac10077":{"iv":"Iwi5PbCQ7diVgA0P","ct":"UgmwvbMSSh2uBdQr3SpY+m9rNyguixDwEDojWjj04t3jITJRDbtx7hozJYxnJHl7"},"b8a26867cad42dde":{"iv":"NI5KW02ZOF+8CJhL","ct":"prYwtctsNpp8V3Dw0X/jOgWvG8I9UYp2t8JHQkPC2nRclJamAcNssjpLvV8DPL2j"},"0c623c4f26261c76":{"iv":"xcpiIKhBObTt23Io","ct":"7LPZ9azv66IytSH3VS48U5AkSR5ubMNDNR16bcfh/rddbuuiWfoXdjsBIgmAYr3L"},"985f04559caf8502":{"iv":"QPtA4Ln84jdzuQAn","ct":"baJ/GBvWtRSehMvDcakVnzLqq8SEQYPxk26nkcWcQj3PecjlcI66FkgdALhgk+tM"},"1ae1b2236eed40e2":{"iv":"DIS+doMfRaUKr7jJ","ct":"sDp/dThCEVyCjgXd8fniezwWXUNxFGXz8/SG7f7t/U4kAV+9FFs7hBwhETHYUWM/"},"1eacc8736aeee589":{"iv":"vRMCGAXnxtki948R","ct":"UUMdtoN7ucD/QZdyyM5Qf3sATIaaGxRgq0JvQAttTQRW1KK3KaztR24QJVSbGLVh"},"2ab55959fc932a6e":{"iv":"TOUO375c1klqytPx","ct":"pSQbVqwyry/waN2JeTBVyXcCiZP1fLEZrBqoCA277hjE4ZgHQoWN8WiCFEEI9B4R"},"1a3521fe6e31e7cf":{"iv":"v9RAZ2WL+L5TAMxJ","ct":"Mmt5DIAx+OJ/qw7ZYIw1QbsIy6keODMxdbyakB5Cf8aC66pkkSAflmGhz0qDxk/N"},"a1b9d63a29ac8e48":{"iv":"7zE4jmRl6PG9ArHC","ct":"0uWrahaRpDDk6WP17jtL3zGusUwCkvI4SGdIN83TnnZgJwao6jNIx3zCtx5nmerP"},"4290f8909a8b4a31":{"iv":"qJvsBS1STUaM/EX1","ct":"87YqIqW5vMg7vVCH0d8WCZLEQCEf78YoDrOKtV6KF6JRJgwKkYu7Jv3vOp9IL0e2"},"8d73f813907f8800":{"iv":"nAUzMlt6++Zm+3+T","ct":"5O/YzMY+Da5y1F7GRtnUsVd1CKDtSt/U99HZyKYRK1HDMIrvWWGs8OTyNr2K76+z"},"74859ad1601d77d9":{"iv":"rX7UtLawP+5PyNFy","ct":"/8i7A62yTSbxJIpSLj0VtpX1HtdWalNgf/ul1bMKb5ean6gjr9aubvPZpfxj1Bfu"},"6b91635d497f6cee":{"iv":"wsJWoxT4vwxxtd9q","ct":"jfuxLvkBtUawgH1Y99qIJVoZCtO68jIevUDw8LC429IJKCq8eE45m9RxYJK1eplp"},"e10ed689477cd99e":{"iv":"4oD51iw2O4U21TTD","ct":"dwa2X0eztU5jNr+VZeeaH/jkhOdlFLNhu0+cmjbz49UotCwcWED6DMc6Gd1RXXaT"}}};
+  window.AQA_WA_BUY = "https://wa.me/573042349545?text=Hola%2C%20te%20escribo%20por%20el%20test%20completo%20A%20qu%C3%A9%20atenerte.%20Cuesta%2020.000%20pesos.%20Se%20paga%20por%20Nequi%20al%20304%20234%209545.%20En%20cuanto%20vea%20el%20pago%2C%20te%20env%C3%ADo%20tu%20c%C3%B3digo%20personal%20por%20este%20mismo%20chat.";</script>
   <script>(function () {
   "use strict";
 
@@ -1192,7 +826,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
   const WA =
     "https://wa.me/573042349545?text=" +
     encodeURIComponent(
-      "Hola, te escribo por la guía A qué atenerte. Cuesta 20.000 pesos. Se paga por Nequi al 304 234 9545. En cuanto vea el pago, te envío el PDF por este mismo chat."
+      "Hola, te escribo por el test completo A qué atenerte. Cuesta 20.000 pesos. Se paga por Nequi al 304 234 9545. En cuanto vea el pago, te envío tu código personal por este mismo chat."
     );
 
   const THEMES = {
@@ -1203,21 +837,22 @@ fieldset { border: 0; margin: 0; padding: 0; }
     alarma: "theme-alarma",
   };
 
-  const flat = {};
-  Object.keys(DATA).forEach(function (id) {
-    const s = DATA[id];
-    if (!s || !s.dims) return;
-    const list = [];
-    s.dims.forEach(function (d, di) {
-      d.questions.forEach(function (q, qi) {
-        list.push({ text: q, dim: di, qi: qi, title: d.title });
+  function prepareData() {
+    Object.keys(DATA).forEach(function (id) {
+      const s = DATA[id];
+      if (!s || !s.dims) return;
+      const list = [];
+      s.dims.forEach(function (d, di) {
+        d.questions.forEach(function (q, qi) {
+          list.push({ text: q, dim: di, qi: qi, title: d.title });
+        });
       });
+      s.totalQ = list.length;
+      s.max = list.length * 2;
+      s.flat = list;
     });
-    s.totalQ = list.length;
-    s.max = list.length * 2;
-    s.flat = list;
-    flat[id] = list;
-  });
+  }
+  prepareData();
 
   let state = load() || { answers: {}, alarms: {}, dimIndex: 0 };
   let current = null; // section id
@@ -1243,7 +878,8 @@ fieldset { border: 0; margin: 0; padding: 0; }
     return document.getElementById(id);
   };
   const views = {
-    home: $("view-home"),
+    homeSample: $("view-home-sample"),
+    homeFull: $("view-home-full"),
     test: $("view-test"),
     result: $("view-result"),
     alarmas: $("view-alarmas"),
@@ -1264,7 +900,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
     const header = $("app-header");
     header.className = "app-header " + (THEMES[theme] || "");
     if (theme) header.classList.add("in-section");
-    $("btn-back").hidden = !theme && mode === "home";
+    $("btn-back").hidden = !theme && (mode === "homeSample" || mode === "homeFull");
     $("header-sub").textContent = sub || "";
     document.body.className = theme ? THEMES[theme] : "";
   }
@@ -1285,11 +921,35 @@ fieldset { border: 0; margin: 0; padding: 0; }
 
   function route() {
     const page = parseHash();
-    if (page === "inicio" || page === "") {
+    if (page === "inicio" || page === "" || page === "codigo") {
       current = null;
       setTheme("", "");
       $("btn-back").hidden = true;
-      show("home");
+      show(window.AQA && window.AQA.unlocked ? "homeFull" : "homeSample");
+      if (page === "codigo") {
+        setTimeout(function () {
+          const el = $("unlock-card") || $("code-input");
+          if (el) el.scrollIntoView({ block: "start" });
+          if ($("code-input")) $("code-input").focus();
+        }, 50);
+      }
+      return;
+    }
+    if (page === "muestra") {
+      current = "muestra";
+      setTheme("pareja", "Muestra de pareja");
+      $("btn-back").hidden = false;
+      if (isComplete("muestra")) {
+        renderResult("muestra");
+        show("result");
+      } else {
+        if (state.dimIndex == null || state.section !== "muestra") {
+          state.dimIndex = firstUnansweredDim("muestra");
+          state.section = "muestra";
+        }
+        renderTest("muestra");
+        show("test");
+      }
       return;
     }
     if (page === "alarmas") {
@@ -1315,6 +975,11 @@ fieldset { border: 0; margin: 0; padding: 0; }
       return;
     }
     if (DATA[page] && DATA[page].dims) {
+      const locked = { pareja: 1, hijos: 1, amistad: 1, vecinos: 1, hermanos: 1, papa: 1 };
+      if (locked[page] && !(window.AQA && window.AQA.unlocked)) {
+        go("codigo");
+        return;
+      }
       current = page;
       const s = DATA[page];
       setTheme(s.theme, s.title);
@@ -1489,6 +1154,13 @@ fieldset { border: 0; margin: 0; padding: 0; }
       return "Relación distante o marcada por el control";
     }
 
+    if (id === "muestra") {
+      const c = band(total, DATA[id].max);
+      if (c === "verde") return "Muestra en verde";
+      if (c === "amarillo") return "Muestra en amarillo";
+      return "Muestra en rojo";
+    }
+
     if (id === "vecinos") {
       if (total >= 15) return "Buen conocido o compañero";
       if (total >= 9) return "Señales mezcladas";
@@ -1581,16 +1253,8 @@ fieldset { border: 0; margin: 0; padding: 0; }
     $("btn-prev-dim").hidden = di === 0;
     $("btn-next-dim").textContent = di === s.dims.length - 1 ? "Ver mi resultado" : "Área siguiente";
     $("btn-next-dim").disabled = !dimDone;
-    markSelected($("questions"));
   }
 
-
-  function markSelected(root) {
-    (root || document).querySelectorAll(".opt").forEach(function (lab) {
-      const input = lab.querySelector("input");
-      if (input) lab.classList.toggle("is-selected", input.checked);
-    });
-  }
   function option(name, value, label, pts, current) {
     const checked = String(current) === value ? " checked" : "";
     return (
@@ -1710,6 +1374,12 @@ fieldset { border: 0; margin: 0; padding: 0; }
       more +=
         '<p><button class="btn btn-ghost" type="button" data-go="amistad">Volver al resultado de amistad</button></p>';
     }
+    if (id === "muestra") {
+      more +=
+        '<div class="buy-card"><h2>Esta fue solo una muestra</h2><p>El test completo tiene 30 señales de pareja, una parte para cuando hay hijos, amistades y vecinos, hermanos, y papá e hijo. Cuesta 20.000 pesos. Se paga por Nequi al 304 234 9545. En cuanto vea el pago, te envío tu código personal por WhatsApp.</p><p><a class="btn btn-wa" href="' +
+        WA +
+        '" target="_blank" rel="noopener noreferrer">Quiero el test completo por WhatsApp</a></p><p><button class="btn btn-ghost" type="button" data-go="codigo">Ya tengo un código</button></p></div>';
+    }
     more +=
       '<p style="margin-top:1rem"><button class="btn btn-ghost" type="button" data-go="hablar">Cómo hablarlo sin atacar</button></p>';
     more +=
@@ -1746,7 +1416,6 @@ fieldset { border: 0; margin: 0; padding: 0; }
         );
       })
       .join("");
-    markSelected($("alarm-questions"));
     updateAlarmResult();
   }
 
@@ -1772,8 +1441,6 @@ fieldset { border: 0; margin: 0; padding: 0; }
     }
   }
 
-  $("questions").addEventListener("submit", function (ev) { ev.preventDefault(); });
-  $("alarm-questions").addEventListener("submit", function (ev) { ev.preventDefault(); });
   $("questions").addEventListener("change", function (ev) {
     const input = ev.target;
     if (!input || input.type !== "radio" || !current) return;
@@ -1781,7 +1448,6 @@ fieldset { border: 0; margin: 0; padding: 0; }
     if (!card) return;
     answersOf(current)[key(card.dataset.di, card.dataset.qi)] = input.value;
     save();
-    markSelected(card);
     const s = DATA[current];
     const di = Number(card.dataset.di);
     const dim = s.dims[di];
@@ -1857,7 +1523,6 @@ fieldset { border: 0; margin: 0; padding: 0; }
     const i = input.name.replace("al-", "");
     state.alarms[i] = input.value;
     save();
-    markSelected($("alarm-questions"));
     updateAlarmResult();
   });
 
@@ -1869,7 +1534,182 @@ fieldset { border: 0; margin: 0; padding: 0; }
   });
 
   window.addEventListener("hashchange", route);
-  route();
+  window.AQA = window.AQA || {};
+  window.AQA.prepareData = prepareData;
+  window.AQA.route = route;
+  window.AQA.go = go;
+})();
+
+
+(function () {
+  "use strict";
+  const PACK = window.AQA_PACK;
+  const STORE = "a-que-atenerte-unlock-v1";
+
+  function b64ToBytes(s) {
+    const bin = atob(s);
+    const out = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+  function bytesToB64(buf) {
+    const bytes = new Uint8Array(buf);
+    let s = "";
+    for (let i = 0; i < bytes.length; i++) s += String.fromCharCode(bytes[i]);
+    return btoa(s);
+  }
+  function normalize(code) {
+    const raw = String(code || "").toUpperCase().replace(/[^0-9A-Z]/g, "");
+    if (raw.indexOf("AQA") === 0 && raw.length >= 9) {
+      const rest = raw.slice(3);
+      if (rest.length === 6) return "AQA-" + rest.slice(0, 4) + "-" + rest.slice(4);
+    }
+    return String(code || "").trim().toUpperCase();
+  }
+  async function shaLookup(code) {
+    const data = new TextEncoder().encode("aqa-lookup:" + code);
+    const hash = await crypto.subtle.digest("SHA-256", data);
+    const hex = Array.from(new Uint8Array(hash))
+      .map(function (b) { return b.toString(16).padStart(2, "0"); })
+      .join("");
+    return hex.slice(0, 16);
+  }
+  async function deriveKey(code, salt, iter) {
+    const enc = new TextEncoder();
+    const base = await crypto.subtle.importKey("raw", enc.encode(code), "PBKDF2", false, ["deriveKey"]);
+    return crypto.subtle.deriveKey(
+      { name: "PBKDF2", salt: salt, iterations: iter, hash: "SHA-256" },
+      base,
+      { name: "AES-GCM", length: 256 },
+      false,
+      ["decrypt"]
+    );
+  }
+  async function decryptAes(key, ivB64, ctB64, aad) {
+    const iv = b64ToBytes(ivB64);
+    const ct = b64ToBytes(ctB64);
+    const raw = await crypto.subtle.decrypt({ name: "AES-GCM", iv: iv, additionalData: aad }, key, ct);
+    return new Uint8Array(raw);
+  }
+  async function importAes(raw) {
+    return crypto.subtle.importKey("raw", raw, { name: "AES-GCM" }, false, ["decrypt"]);
+  }
+
+  async function decryptWithContentKey(contentRaw) {
+    const key = await importAes(contentRaw);
+    const plain = await decryptAes(key, PACK.iv, PACK.payload, new TextEncoder().encode("aqa-payload"));
+    return JSON.parse(new TextDecoder().decode(plain));
+  }
+
+  async function unlockWithCode(code) {
+    const norm = normalize(code);
+    const id = await shaLookup(norm);
+    const wrap = PACK.wraps[id];
+    if (!wrap) {
+      const err = new Error("invalid");
+      err.code = "invalid";
+      throw err;
+    }
+    const salt = b64ToBytes(PACK.salt);
+    const derived = await deriveKey(norm, salt, PACK.iter);
+    let contentRaw;
+    try {
+      contentRaw = await decryptAes(derived, wrap.iv, wrap.ct, new TextEncoder().encode("aqa-wrap"));
+    } catch (e) {
+      const err = new Error("invalid");
+      err.code = "invalid";
+      throw err;
+    }
+    const data = await decryptWithContentKey(contentRaw);
+    try {
+      localStorage.setItem(STORE, JSON.stringify({ k: bytesToB64(contentRaw) }));
+    } catch (e) {}
+    applyFullData(data);
+    return true;
+  }
+
+  function applyFullData(data) {
+    const muestra = window.DATA && window.DATA.muestra;
+    window.DATA = data;
+    if (muestra && !window.DATA.muestra) window.DATA.muestra = muestra;
+    window.AQA = window.AQA || {};
+    window.AQA.unlocked = true;
+    if (typeof window.AQA.prepareData === "function") window.AQA.prepareData();
+    const badge = document.getElementById("unlocked-badge");
+    if (badge) badge.hidden = false;
+  }
+
+  async function tryRestore() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(STORE) || "");
+      if (!raw || !raw.k) return false;
+      const data = await decryptWithContentKey(b64ToBytes(raw.k));
+      applyFullData(data);
+      return true;
+    } catch (e) {
+      try { localStorage.removeItem(STORE); } catch (err) {}
+      return false;
+    }
+  }
+
+  function showError(msg) {
+    const el = document.getElementById("code-error");
+    if (!el) return;
+    if (!msg) {
+      el.hidden = true;
+      el.textContent = "";
+      return;
+    }
+    el.hidden = false;
+    el.textContent = msg;
+  }
+
+  async function boot() {
+    await tryRestore();
+    const form = document.getElementById("code-form");
+    if (form) {
+      form.addEventListener("submit", async function (ev) {
+        ev.preventDefault();
+        showError("");
+        const input = document.getElementById("code-input");
+        const btn = document.getElementById("btn-unlock");
+        const code = input ? input.value : "";
+        if (!code || String(code).trim().length < 8) {
+          showError("Escribe tu código personal, por ejemplo AQA-7K3M-9P.");
+          return;
+        }
+        if (btn) btn.disabled = true;
+        try {
+          await unlockWithCode(code);
+          if (input) input.value = "";
+          if (window.AQA && window.AQA.go) window.AQA.go("inicio");
+          else if (window.AQA && window.AQA.route) window.AQA.route();
+        } catch (e) {
+          showError("Este código no es válido. Revísalo con calma o escríbeme por WhatsApp.");
+        } finally {
+          if (btn) btn.disabled = false;
+        }
+      });
+    }
+    const start = document.getElementById("btn-start-sample");
+    if (start) {
+      start.addEventListener("click", function () {
+        if (window.AQA && window.AQA.go) window.AQA.go("muestra");
+        else location.hash = "muestra";
+      });
+    }
+    const wa = document.getElementById("btn-wa-buy");
+    if (wa) wa.href = window.AQA_WA_BUY || wa.href;
+    if (window.AQA && window.AQA.route) window.AQA.route();
+  }
+
+  window.AQA = window.AQA || {};
+  window.AQA.unlockWithCode = unlockWithCode;
+  window.AQA.tryRestore = tryRestore;
+  window.AQA.normalize = normalize;
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+  else boot();
 })();
 </script>
 </body>

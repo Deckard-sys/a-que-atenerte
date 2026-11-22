@@ -1,6 +1,6 @@
 # A qué atenerte
 
-Test público y gratuito para entender una relación de pareja, de amistad o con un vecino, de hermanos, o entre papá e hijo, y saber a qué atenerte.
+Muestra gratis y test completo (con código personal) para entender una relación de pareja, de amistad o con un vecino, de hermanos, o entre papá e hijo, y saber a qué atenerte.
 
 **Página pública:** https://deckard-sys.github.io/
 
