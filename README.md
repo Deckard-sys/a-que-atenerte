@@ -1,2 +1,9 @@
-# a-que-atenerte
-Test público de A qué atenerte, de Edgar García. Guía de orientación práctica. No reemplaza a un psicólogo.
+# A qué atenerte
+
+Test público y gratuito para entender una relación de pareja, de amistad o con un vecino, de hermanos, o entre papá e hijo, y saber a qué atenerte.
+
+Elaborado por **Edgar García**. Es una guía de orientación práctica. No es un diagnóstico, no es un tratamiento y no reemplaza la consulta con un psicólogo, un médico u otro profesional de la salud.
+
+Página: https://deckard-sys.github.io/a-que-atenerte/
+
+Si hay violencia o peligro en Colombia, llama al **123** (emergencias), al **155** (violencias basadas en género) o al **106** (salud mental). Son líneas gratuitas y las 24 horas.

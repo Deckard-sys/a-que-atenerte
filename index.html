@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1A1D23">
+  <meta name="description" content="Test gratuito para entender tu relación de pareja, amistades y vecinos, hermanos, o papá e hijo, y saber a qué atenerte. Guía de orientación de Edgar García. No reemplaza a un psicólogo.">
+  <meta name="author" content="Edgar García">
+  <title>A qué atenerte — Test para entender tus relaciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231A1D23'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='36' fill='%23F6F3EF'%3EA%3C/text%3E%3C/svg%3E">
+  <style>:root {
+  --ink: #1A1D23;
+  --muted: #4A5160;
+  --paper: #F6F3EF;
+  --card: #ffffff;
+  --line: #E3DED6;
+  --gold: #8A6A32;
+  --focus: #1A1D23;
+  --pareja: #C2185B;
+  --pareja-dark: #8E1244;
+  --pareja-soft: #FCE4EF;
+  --papa: #1565C0;
+  --papa-dark: #0D47A1;
+  --papa-soft: #E3F0FC;
+  --amistad: #047857;
+  --amistad-dark: #065F46;
+  --amistad-soft: #E6F6F0;
+  --hermanos: #C05600;
+  --hermanos-dark: #9A4300;
+  --hermanos-soft: #FDECDC;
+  --alarma: #6B1D3A;
+  --alarma-soft: #F8E8EE;
+  --verde: #1B7A3A;
+  --verde-soft: #E5F5EA;
+  --amarillo: #9A6B00;
+  --amarillo-soft: #FFF3D1;
+  --rojo: #C62828;
+  --rojo-soft: #FDECEC;
+  --accent: var(--ink);
+  --accent-dark: #000;
+  --accent-soft: #eee;
+  --header-h: 3.5rem;
+  --radius: 1rem;
+  --shadow: 0 8px 24px rgba(26, 29, 35, 0.07);
+  --font-title: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Nunito", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.55;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, svg { max-width: 100%; display: block; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+
+:focus { outline: none; }
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--ink);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+.skip:focus { top: 0.75rem; }
+
+h1, h2, h3, .brand, .card-title, .btn, .opt, .result-title, .area-name {
+  font-family: var(--font-title);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+h1 { font-size: clamp(1.52rem, 5.6vw, 2.05rem); font-weight: 800; margin: 0 0 0.45rem; }
+h2 { font-size: 1.35rem; font-weight: 700; margin: 0 0 0.6rem; }
+h3 { font-size: 1.1rem; font-weight: 700; margin: 0 0 0.4rem; }
+p { margin: 0 0 0.85rem; }
+p:last-child { margin-bottom: 0; }
+.lead { font-size: 1.2rem; color: var(--ink); }
+.muted { color: var(--muted); }
+.small { font-size: 0.95rem; color: var(--muted); line-height: 1.5; }
+
+a { color: var(--accent-dark); }
+a:hover { text-decoration-thickness: 2px; }
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: var(--header-h);
+  padding: 0.45rem 0.9rem;
+  background: rgba(246, 243, 239, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.app-header.in-section {
+  background: var(--accent);
+  border-bottom-color: transparent;
+  color: #fff;
+}
+.app-header.in-section a,
+.app-header.in-section .brand,
+.app-header.in-section .header-sub { color: #fff; }
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--ink);
+  min-width: 0;
+}
+.brand-name { font-weight: 800; font-size: 1.05rem; line-height: 1.15; }
+.header-sub { font-family: var(--font-body); font-size: 0.78rem; opacity: 0.9; font-weight: 600; }
+
+.btn-icon {
+  flex: 0 0 auto;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  border-radius: 0.7rem;
+  background: transparent;
+  color: inherit;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+.btn-icon:hover { background: rgba(255,255,255,0.15); }
+.app-header:not(.in-section) .btn-icon:hover { background: rgba(0,0,0,0.06); }
+.btn-icon[hidden] { display: none; }
+
+main { max-width: 42rem; margin: 0 auto; padding: 0.9rem 1rem 5rem; }
+.view[hidden] { display: none !important; }
+
+.hero {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  padding: 1.05rem 1.05rem 1rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+.eyebrow {
+  font-family: var(--font-title);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 0.4rem;
+}
+.legal-banner {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.8rem;
+  background: #F3EEE6;
+  border-left: 4px solid var(--gold);
+  border-radius: 0 0.6rem 0.6rem 0;
+  font-size: 0.95rem;
+}
+
+.grid { display: grid; gap: 0.85rem; }
+.card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(180deg, var(--accent-soft) 0%, #ffffff 2.1rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 8px;
+  background: var(--accent);
+}
+.card { padding-left: 1.25rem; }
+.card:hover { transform: translateY(-1px); }
+.card-kicker {
+  font-family: var(--font-title);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin: 0 0 0.15rem;
+}
+.card-title { font-size: 1.2rem; font-weight: 700; margin: 0 0 0.3rem; color: var(--accent-dark); }
+.card p { margin: 0; color: var(--muted); font-size: 1.02rem; }
+.theme-pareja { --accent: var(--pareja); --accent-dark: var(--pareja-dark); --accent-soft: var(--pareja-soft); }
+.theme-papa { --accent: var(--papa); --accent-dark: var(--papa-dark); --accent-soft: var(--papa-soft); }
+.theme-amistad { --accent: var(--amistad); --accent-dark: var(--amistad-dark); --accent-soft: var(--amistad-soft); }
+.theme-hermanos { --accent: var(--hermanos); --accent-dark: var(--hermanos-dark); --accent-soft: var(--hermanos-soft); }
+.theme-alarma { --accent: var(--alarma); --accent-dark: #4A1028; --accent-soft: var(--alarma-soft); }
+
+.howto {
+  margin: 1.3rem 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+}
+.howto ol, .howto ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.howto li { margin: 0.3rem 0; }
+.legend {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.8rem;
+}
+.legend-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  font-size: 0.98rem;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.badge-verde { background: var(--verde-soft); color: var(--verde); }
+.badge-amarillo { background: var(--amarillo-soft); color: var(--amarillo); }
+.badge-rojo { background: var(--rojo-soft); color: var(--rojo); }
+.badge-section { background: var(--accent-soft); color: var(--accent-dark); }
+
+.progress-wrap {
+  margin: 0.4rem 0 1rem;
+}
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  font-family: var(--font-title);
+  margin-bottom: 0.35rem;
+}
+.bar {
+  height: 0.7rem;
+  background: #E8E3DB;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.bar > span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  border-radius: inherit;
+  transition: width 0.25s ease;
+}
+.dim-chip {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-family: var(--font-title);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.45rem;
+}
+
+.q-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.95rem 0.95rem 0.85rem;
+  margin-bottom: 0.8rem;
+}
+.q-legend {
+  font-weight: 700;
+  margin: 0 0 0.7rem;
+  padding: 0;
+}
+.q-num { color: var(--accent-dark); }
+fieldset { border: 0; margin: 0; padding: 0; }
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.45rem;
+}
+.opt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  min-height: 3.15rem;
+  padding: 0.45rem 0.25rem;
+  border: 2px solid #D8D2C8;
+  border-radius: 0.75rem;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-align: center;
+}
+.opt .pts { font-family: var(--font-body); font-size: 0.72rem; font-weight: 600; color: var(--muted); }
+.opt:has(input:checked),
+.opt.is-selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.opt:has(input:checked) .pts,
+.opt.is-selected .pts { color: rgba(255,255,255,0.9); }
+.opt:has(input:focus-visible) {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.opt input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-row {
+  display: flex;
+  gap: 0.6rem;
+  margin: 1rem 0 0.5rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 3rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: 0.85rem;
+  border: 2px solid transparent;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  width: 100%;
+}
+.nav-row .btn-primary { width: auto; flex: 1.5; }
+.nav-row .btn-ghost { width: auto; }
+.btn-primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+.btn-primary[disabled] { opacity: 0.45; cursor: not-allowed; }
+.btn-ghost {
+  background: transparent;
+  color: var(--accent-dark);
+  border-color: currentColor;
+  flex: 1;
+}
+.btn-ghost:hover { background: var(--accent-soft); }
+.btn-wa {
+  background: #128C4B;
+  color: #fff;
+  border-color: #128C4B;
+  width: 100%;
+}
+.btn-wa:hover { background: #0E6E3B; }
+.btn-wa:focus-visible { outline-color: #0E6E3B; }
+
+.note {
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 0.7rem 0.7rem 0;
+  padding: 0.85rem 0.95rem;
+  margin: 0.9rem 0;
+}
+.note.alert {
+  background: var(--alarma-soft);
+  border-left-color: var(--alarma);
+}
+.note.semaforo {
+  background: #fff;
+  border-left-color: var(--gold);
+}
+
+.result-hero {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 2px);
+  padding: 1.15rem 1.1rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+.result-kicker {
+  font-family: var(--font-title);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 0.35rem;
+}
+.result-title { font-size: 1.45rem; font-weight: 800; margin: 0.2rem 0 0.7rem; }
+.score-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.8rem;
+  margin-bottom: 0.7rem;
+}
+.score-num {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.score-max { color: var(--muted); font-weight: 700; }
+
+.areas { display: grid; gap: 0.55rem; margin: 1rem 0; }
+.area {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 0.7rem 0.8rem;
+}
+.area-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+.area-name { font-size: 0.95rem; font-weight: 700; }
+.area-pts { font-size: 0.9rem; font-weight: 700; color: var(--muted); white-space: nowrap; }
+.mini-bar { height: 0.45rem; background: #E8E3DB; border-radius: 99px; overflow: hidden; }
+.mini-bar > span { display: block; height: 100%; border-radius: inherit; }
+.mini-bar.verde > span { background: var(--verde); width: 100%; }
+.mini-bar.amarillo > span { background: var(--amarillo); width: 65%; }
+.mini-bar.rojo > span { background: var(--rojo); width: 30%; }
+
+.profile-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 6px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.05rem 1rem 1rem;
+  margin: 1rem 0;
+}
+.profile-card.danger { border-top-color: var(--rojo); }
+.split h3 { margin-top: 0.8rem; font-size: 1rem; color: var(--accent-dark); }
+
+.quotes { display: grid; gap: 0.55rem; margin: 0.8rem 0 1rem; }
+.quote {
+  background: #fff;
+  border-left: 4px solid var(--gold);
+  padding: 0.7rem 0.85rem;
+  border-radius: 0 0.6rem 0.6rem 0;
+  font-style: italic;
+}
+
+.lines { display: grid; gap: 0.55rem; margin: 0.8rem 0; }
+.line {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  padding: 0.8rem 0.9rem;
+  text-decoration: none;
+  color: inherit;
+}
+.line strong {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  color: var(--alarma);
+  min-width: 3rem;
+}
+
+.yn .options { grid-template-columns: 1fr 1fr; }
+
+.app-footer {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.app-footer p { margin: 0 0 0.5rem; }
+
+@media (max-width: 360px) {
+  .options { grid-template-columns: 1fr; }
+  body { font-size: 1.05rem; }
+  .opt { min-height: 2.85rem; }
+}
+
+@media print {
+  .app-header, .btn, .btn-icon, .skip, .nav-row { display: none !important; }
+  body { background: #fff; }
+  main { padding: 0; }
+  .view[hidden] { display: none !important; }
+}
+</style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="app-header" id="app-header">
+    <button class="btn-icon" id="btn-back" type="button" hidden aria-label="Volver">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19 8 12l7-7"/></svg>
+    </button>
+    <a class="brand" href="#inicio" data-nav="inicio">
+      <span class="brand-name">A qué atenerte</span>
+      <span class="header-sub" id="header-sub"></span>
+    </a>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="view" id="view-home">
+      <div class="hero">
+        <p class="eyebrow">Test gratuito</p>
+        <h1>Entiende tus relaciones para saber a qué atenerte</h1>
+        <p class="lead">Responde Sí, A medias o No. Al final ves un perfil claro y un semáforo: verde, amarillo o rojo. Mira lo que ocurre la mayoría de las veces, no un solo día.</p>
+        <div class="legal-banner"><strong>Esto no reemplaza a un psicólogo.</strong> Guía de orientación de Edgar García. No es un diagnóstico. <a href="#aviso" data-nav="aviso">Aviso completo</a>.</div>
+      </div>
+
+      <h2>Elige el tipo de relación</h2>
+      <p class="muted" style="margin-bottom:0.7rem">Cada tipo tiene su color, para distinguirlo con facilidad. Ese color no es el semáforo del resultado (verde, amarillo o rojo).</p>
+      <div class="grid">
+        <a class="card theme-pareja" href="#pareja" data-nav="pareja">
+          <p class="card-kicker">Fucsia</p>
+          <p class="card-title">Relación de pareja</p>
+          <p>30 señales en 10 áreas. Si hay hijos o una familia ensamblada, al final puedes responder una parte opcional.</p>
+        </a>
+        <a class="card theme-amistad" href="#amistad" data-nav="amistad">
+          <p class="card-kicker">Verde esmeralda</p>
+          <p class="card-title">Amistades y vecinos</p>
+          <p>18 señales de amistad y, si quieres, 9 señales para un vecino, un conocido o un compañero de trabajo.</p>
+        </a>
+        <a class="card theme-hermanos" href="#hermanos" data-nav="hermanos">
+          <p class="card-kicker">Naranja ámbar</p>
+          <p class="card-title">Hermanos</p>
+          <p>18 señales en 6 áreas: respeto, apoyo, justicia y el espacio de cada uno.</p>
+        </a>
+        <a class="card theme-papa" href="#papa" data-nav="papa">
+          <p class="card-kicker">Azul</p>
+          <p class="card-title">Papá e hijo</p>
+          <p>18 señales si el hijo ya es joven o adulto. Puedes responder como papá o como hijo.</p>
+        </a>
+        <a class="card theme-alarma" href="#alarmas" data-nav="alarmas">
+          <p class="card-kicker">Empieza aquí si hay miedo</p>
+          <p class="card-title">Señales de alarma</p>
+          <p>Seis preguntas de sí o no, para cualquier relación. Si hay peligro, pide ayuda primero.</p>
+        </a>
+      </div>
+
+      <div class="howto">
+        <h2>Cómo responder</h2>
+        <ol>
+          <li><strong>Sí</strong>, esto se cumple de forma constante: vale 2 puntos.</li>
+          <li><strong>A medias</strong>, a veces sí y a veces no: vale 1 punto.</li>
+          <li><strong>No</strong>, esto casi no se cumple: vale 0 puntos.</li>
+        </ol>
+        <p style="margin-top:0.8rem">El total importa, pero las áreas importan todavía más. Por ejemplo, una pareja puede verse bien en lo sexual y estar muy lastimada en el respeto.</p>
+        <div class="legend" aria-label="Significado del semáforo de resultado">
+          <div class="legend-row"><span class="badge badge-verde">Verde</span> <span>Esa área se sostiene de forma bastante estable.</span></div>
+          <div class="legend-row"><span class="badge badge-amarillo">Amarillo</span> <span>Hay algo, pero faltan piezas importantes.</span></div>
+          <div class="legend-row"><span class="badge badge-rojo">Rojo</span> <span>Esa área está débil o lastimada. Conviene mirarla con cuidado.</span></div>
+        </div>
+        <div class="note alert" style="margin-top:1rem">
+          <strong>Si hay miedo o daño, empieza por ahí.</strong>
+          No esperes el puntaje. Ve primero a <a href="#alarmas" data-nav="alarmas">señales de alarma</a> y pide ayuda si la necesitas.
+        </div>
+      </div>
+
+      <p><a class="btn btn-ghost" href="#hablar" data-nav="hablar" style="width:100%">Cómo hablarlo sin atacar</a></p>
+    </section>
+
+    <section class="view" id="view-test" hidden>
+      <div id="test-intro"></div>
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span id="progress-label">Área 1</span>
+          <span id="progress-count">0 de 0 señales</span>
+        </div>
+        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0" aria-label="Avance de las señales">
+          <span id="progress-bar"></span>
+        </div>
+      </div>
+      <div class="dim-chip" id="dim-chip"></div>
+      <div id="questions"></div>
+      <div class="nav-row">
+        <button class="btn btn-ghost" id="btn-prev-dim" type="button">Área anterior</button>
+        <button class="btn btn-primary" id="btn-next-dim" type="button" disabled>Área siguiente</button>
+      </div>
+    </section>
+
+    <section class="view" id="view-result" hidden>
+      <div class="result-hero" id="result-hero"></div>
+      <div id="result-profile" class="profile-card"></div>
+      <div id="result-areas" class="areas"></div>
+      <div id="result-extra"></div>
+    </section>
+
+    <section class="view" id="view-alarmas" hidden>
+      <h1>Señales de alarma</h1>
+      <p>Estas señales aplican a cualquier relación. Si una de ellas ocurre de forma constante, el puntaje de las otras listas pasa a segundo lugar: primero está tu seguridad.</p>
+      <p>Responde si esto pasa en la relación que estás mirando. Aquí no se suma un puntaje de colores. Con que una respuesta sea sí, ya hay que prestar atención y, si hay peligro, pedir ayuda.</p>
+      <div id="alarm-questions"></div>
+      <div id="alarm-result" hidden></div>
+      <h2>Líneas de ayuda en Colombia</h2>
+      <p>Son oficiales, gratuitas y las 24 horas.</p>
+      <div class="lines">
+        <a class="line" href="tel:123"><strong>123</strong><span>Emergencias. Úsala si hay un peligro inmediato. Es la línea única de emergencias del país.</span></a>
+        <a class="line" href="tel:155"><strong>155</strong><span>Orientación ante violencias basadas en género. Es confidencial y atiende las 24 horas.</span></a>
+        <a class="line" href="tel:106"><strong>106</strong><span>Orientación en salud mental. Puedes llamar si necesitas que te escuchen o estás en una crisis emocional.</span></a>
+      </div>
+      <p class="small">Estos números fueron confirmados en fuentes oficiales de Colombia en noviembre de 2026: la Policía Nacional y gov.co para el 123 y el 155, y el Ministerio de Salud para el 106.</p>
+    </section>
+
+    <section class="view" id="view-hablar" hidden>
+      <h1>Cómo hablarlo sin atacar</h1>
+      <p>Esta guía también sirve para conversar con tu pareja, un amigo, un vecino, un hermano o un hijo. El objetivo no es ganar una pelea ni señalar a la otra persona. El objetivo es ver, entre los dos, si la relación vale la pena y qué espera cada uno.</p>
+      <ol>
+        <li><strong>Elige un buen momento.</strong> Habla cuando los dos estén en calma, con tiempo y en un lugar privado. No lo hagas en medio de una pelea, ni cuando alguien va de afán o muy cansado. Si hay miedo o violencia, no tengas esta conversación a solas; pide ayuda primero.</li>
+        <li><strong>Invita, no acuses.</strong> Pídele a la otra persona que responda la misma lista por su lado. Después comparen, área por área, con calma. No uses el puntaje como un arma.</li>
+        <li><strong>Habla en primera persona.</strong> Di lo que tú sientes y lo que tú necesitas. Evita frases como «tú nunca» o «tú siempre». Esas frases cierran la conversación.</li>
+        <li><strong>Si hay hijos, no los culpes.</strong> Habla de acuerdos, roles y límites. No pongas a los hijos en el centro de la culpa. Ellos no tienen que elegir ni resolver la pareja.</li>
+        <li><strong>Escucha y acuerden un paso pequeño.</strong> Deja que la otra persona explique cómo lo ve. Si no quiere hacer el ejercicio, no la obligues. Tú igual puedes usar esta guía para saber a qué atenerte.</li>
+      </ol>
+      <p>Puedes usar frases como estas, y cambiarlas con tus palabras:</p>
+      <div class="quotes">
+        <div class="quote">Quiero entender mejor lo que tenemos. Yo respondí estas preguntas y me gustaría que tú también las respondas, para comparar con calma.</div>
+        <div class="quote">No es para pelear. Es para ver si los dos esperamos lo mismo.</div>
+        <div class="quote">Para mí es importante el cuidado de todos los días, no solo los momentos de intimidad. ¿Tú cómo lo ves?</div>
+        <div class="quote">Cuando miro estas áreas, siento que algunas se cumplen y otras no. Me gustaría hablar de eso contigo.</div>
+        <div class="quote">Si algo te parece injusto de lo que yo veo, dime cómo lo ves tú. Quiero escucharte.</div>
+        <div class="quote">Siento que hay cosas que solos no estamos pudiendo resolver. ¿Te parecería buscar ayuda de un profesional, los dos juntos?</div>
+      </div>
+      <div class="note">
+        <strong>Un cuidado importante.</strong>
+        El puntaje no se usa para decir «tú sacaste rojo». Se usa para hablar de hechos concretos: lo que sí ocurre, lo que falta y lo que cada uno puede ofrecer de verdad. Si el perfil sugiere buscar ayuda, es una invitación, no una sentencia.
+      </div>
+      <p>Puedes repetir el ejercicio cuando quieras, porque las relaciones cambian con el tiempo.</p>
+    </section>
+
+    <section class="view" id="view-aviso" hidden>
+      <h1>Aviso importante</h1>
+      <div class="note alert">
+        <strong>Esto no reemplaza a un psicólogo.</strong>
+        Esta guía fue elaborada por Edgar García como un material de orientación práctica. Sirve para observar una relación con criterios claros y para conversar con más calma. No es un diagnóstico clínico, no es un tratamiento y no reemplaza la consulta con un psicólogo, un médico u otro profesional de la salud.
+      </div>
+      <p>Edgar García no se presenta aquí como psicólogo, terapeuta ni profesional de la salud. El crédito de esta guía es solo: Edgar García.</p>
+      <p>Si hay violencia, miedo o peligro, no esperes a terminar el test. Pide ayuda primero. En Colombia puedes llamar, de forma gratuita y las 24 horas, al <a href="tel:123"><strong>123</strong></a> (emergencias), al <a href="tel:155"><strong>155</strong></a> (orientación ante violencias basadas en género) o al <a href="tel:106"><strong>106</strong></a> (orientación en salud mental).</p>
+      <p>Tus respuestas se quedan en este teléfono. No se envían a internet. Puedes borrarlas cuando quieras. No las compartas si no te sientes seguro.</p>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p><strong>Edgar García</strong></p>
+    <p>A qué atenerte. Guía para entender mis relaciones. Guía de orientación práctica. No reemplaza a un psicólogo.</p>
+  </footer>
+
+  <script>window.DATA = {
+  "pareja": {
+    "id": "pareja",
+    "theme": "pareja",
+    "title": "Relación de pareja",
+    "kicker": "Fucsia",
+    "short": "30 señales en 10 áreas. Si hay hijos, al final puedes responder una parte opcional.",
+    "intro": [
+      "Una pareja no se define solo por el cariño o por el sexo. Se mira también el proyecto, la forma de pelear, la confianza, el respeto, el dinero y si el cuidado es de los dos.",
+      "El resultado ayuda a distinguir varios caminos: una pareja sólida, una pareja en crisis que aún se puede trabajar, una amistad con atracción, una relación centrada en lo sexual, o una relación dañina.",
+      "Si en esta relación hay hijos, al terminar puedes responder una parte opcional. Esa parte se mira aparte, porque los hijos cambian el sistema de la pareja."
+    ],
+    "dims": [
+      {
+        "title": "Compromiso y proyecto",
+        "questions": [
+          "Los dos se ven compartiendo un futuro, no solo el momento de ahora.",
+          "Hay planes concretos juntos: vivienda, cuidado mutuo, vida diaria o proyectos a mediano plazo.",
+          "Si hay un problema grave, la primera idea de ambos es cuidar la relación, no abandonarla enseguida."
+        ]
+      },
+      {
+        "title": "Comunicación y manejo de conflictos",
+        "questions": [
+          "Pueden hablar de desacuerdos sin insultarse ni dejarse de hablar por mucho tiempo.",
+          "Cuando hay un conflicto, buscan entenderse y llegar a un acuerdo, no solo ganar la pelea.",
+          "Pueden pedir perdón y reparar después de una pelea."
+        ]
+      },
+      {
+        "title": "Intimidad emocional",
+        "questions": [
+          "Pueden contar miedos, tristezas o necesidades sin que el otro se burle o se cierre.",
+          "Sienten que el otro los conoce de verdad, no solo en lo superficial.",
+          "Hay gestos de cariño y de interés en el día a día, no solo en momentos especiales."
+        ]
+      },
+      {
+        "title": "Intimidad sexual",
+        "questions": [
+          "La vida sexual, si la hay, se habla con respeto. Se tienen en cuenta el gusto y el límite de los dos.",
+          "El deseo sexual es una parte importante, pero no es la única razón por la que se buscan.",
+          "Nadie es presionado, humillado o ignorado en lo íntimo."
+        ]
+      },
+      {
+        "title": "Confianza y exclusividad",
+        "questions": [
+          "Hay un acuerdo claro sobre fidelidad, o sobre lo que cada uno espera en lo afectivo y sexual.",
+          "Confían el uno en el otro: no hay mentiras frecuentes ni una duda constante que no se puede hablar.",
+          "No tienen que vigilar el teléfono o los pasos del otro para sentir un poco de paz."
+        ]
+      },
+      {
+        "title": "Respeto y trato",
+        "questions": [
+          "Se hablan con respeto, incluso cuando están enfadados.",
+          "Nadie humilla, amenaza, controla o da miedo al otro.",
+          "Se valoran como personas, no solo por lo que dan o por lo que sirven."
+        ]
+      },
+      {
+        "title": "Apoyo en la salud y en momentos difíciles",
+        "questions": [
+          "Si uno se enferma o está en crisis, el otro acompaña y ayuda.",
+          "En un mal momento de dinero, trabajo, salud mental o familia, se sienten un equipo.",
+          "El cuidado aparece en la vida diaria, no solo cuando hay ganas de intimidad."
+        ]
+      },
+      {
+        "title": "Dinero y decisiones",
+        "questions": [
+          "El dinero importante se habla con claridad, no se esconde.",
+          "Las decisiones grandes se toman entre los dos, no las impone uno solo.",
+          "Hay un acuerdo justo sobre gastos, deudas y responsabilidades."
+        ]
+      },
+      {
+        "title": "Familia y entorno",
+        "questions": [
+          "Se presentan como pareja ante la familia, los amigos o la vida diaria, no solo en privado.",
+          "La familia o los amigos no tienen más poder que la pareja para decidir lo de los dos.",
+          "Se respetan los lazos de cada uno, sin aislar al otro de su gente."
+        ]
+      },
+      {
+        "title": "Reciprocidad",
+        "questions": [
+          "Los dos invierten tiempo y energía de forma parecida. No es uno solo quien carga con todo.",
+          "El cuidado, el cariño y el esfuerzo van en los dos sentidos.",
+          "Los dos se sienten importantes en la relación. No es uno quien siempre pide y el otro quien siempre cede."
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "title": "Pareja sólida",
+        "text": "Esta relación se parece a una pareja sólida. Qué esperar: puedes esperar cuidado, respeto, conversación y un proyecto compartido. Nadie es perfecto, y pueden existir temas a mejorar. Qué hacer: sigan cuidando lo que ya funciona y hablen de lo que esté a medias. Buscar a un profesional de pareja no es urgente. Pueden ir si quieren fortalecerse todavía más, sobre todo si hay hijos y quieren acordar mejor la crianza."
+      },
+      {
+        "title": "Pareja en crisis que se puede trabajar",
+        "text": "Hay un vínculo real, pero hay áreas lastimadas o estancadas. Esto se parece a una pareja en crisis que aún se puede trabajar, si los dos quieren. Qué esperar: no asumas que todo está resuelto, ni que ya no hay nada que hacer. Mira las áreas más bajas: ahí suele estar lo que más duele. Qué hacer: hablen con calma de esos puntos. Puede ayudar una consulta de pareja si llevan tiempo atascados, si las peleas se repiten, o si solos no logran cambiar. Si además hay hijos, un profesional de familia puede ayudar a ordenar roles y límites."
+      },
+      {
+        "title": "Amistad con atracción",
+        "text": "Hay cariño o compañía, pero faltan un proyecto compartido y una responsabilidad de pareja claros. Esto puede parecerse a una amistad con atracción. Qué esperar: no asumas un futuro de esposos o de pareja comprometida si eso no está hablado y sostenido con hechos. Qué hacer: hablen con honestidad sobre lo que cada uno quiere. Si uno espera una pareja y el otro no puede o no quiere darla, conviene verlo a tiempo. Una consulta de pareja puede ayudar si desean aclarar el vínculo y no están pudiendo hacerlo solos."
+      },
+      {
+        "title": "Relación centrada en lo sexual",
+        "text": "Hoy pesan más la atracción o lo sexual que el cuidado, el futuro y la intimidad emocional. Esto puede ser una relación centrada en lo sexual. Qué esperar: puedes esperar deseo o encuentros, pero no el sostén de una pareja comprometida, a menos que eso cambie de verdad. Qué hacer: está bien si los dos lo quieren así y lo tienen claro. No está bien si uno espera una pareja y el otro no lo está dando. Hablen con claridad. Busquen ayuda profesional si esta situación les hace daño o los deja muy confundidos."
+      },
+      {
+        "title": "El vínculo está débil o desgastado",
+        "text": "El vínculo está débil o desgastado. Qué esperar: no puedes dar por hecha una pareja estable. Qué hacer: revisen si los dos quieren construir algo distinto. Si hay respeto y voluntad, se puede trabajar, a veces con ayuda profesional. Si no hay voluntad de los dos, es preferible no forzar un rol de pareja que no está."
+      },
+      {
+        "title": "Relación dañina",
+        "text": "El trato o la confianza están muy lastimados. Esto no se parece a una pareja segura. Qué esperar: si nada cambia, puede haber más miedo, control o daño. Qué hacer: pon tu seguridad primero. Si hay insultos graves, amenazas, control o violencia, no intentes resolverlo solo con una charla. En ese caso, una consulta de pareja no es el primer paso, porque puede aumentar el riesgo. Busca ayuda y, si hay peligro, llama al 123. También puedes llamar al 155 si hay violencia, o al 106 si necesitas apoyo emocional."
+      }
+    ]
+  },
+  "hijos": {
+    "id": "hijos",
+    "theme": "pareja",
+    "title": "Cuando hay hijos o una familia ensamblada",
+    "kicker": "Opcional",
+    "short": "12 señales. Responde solo si en la relación hay hijos de él, de ella, de ambos, o una familia ensamblada.",
+    "intro": [
+      "Cuando hay hijos, la pareja ya no es solo cosa de dos. Los hijos traen historia, miedos y lealtades. Eso ocurre si los hijos son de él, de ella o de ambos.",
+      "Una familia ensamblada es una familia donde hay hijos de una relación anterior, y a veces también hijos de la nueva pareja. En esas familias, los vínculos tardan. Eso es frecuente, no es un fracaso automático.",
+      "Lo sano es que el papá o la mamá biológica siga siendo el adulto responsable principal de sus hijos. El padrastro o la madrastra acompaña y respeta. No reemplaza al otro padre o a la otra madre, y no compite por el amor del hijo.",
+      "Esta parte es opcional y no cambia el puntaje de pareja."
+    ],
+    "dims": [
+      {
+        "title": "El lugar de cada adulto y la crianza",
+        "questions": [
+          "Está claro que el papá o la mamá biológica sigue siendo el adulto responsable principal de sus hijos.",
+          "El padrastro o la madrastra tiene un lugar respetado, sin pretender reemplazar al otro padre o a la otra madre.",
+          "Las reglas de crianza se hablan en pareja, y no se cambian a escondidas delante de los hijos."
+        ]
+      },
+      {
+        "title": "Celos, lealtad y vínculo con los hijos",
+        "questions": [
+          "Los hijos no son usados para dar celos, para chantajear o para aliarse contra la pareja.",
+          "Se acepta que un hijo pueda tardar en tomar confianza con la nueva pareja.",
+          "Nadie exige al hijo que elija entre su papá, su mamá y la nueva pareja."
+        ]
+      },
+      {
+        "title": "Relación con el ex y dinero para los hijos",
+        "questions": [
+          "El contacto con el ex, si existe, se mantiene en lo que toca a los hijos, con límites claros y respeto.",
+          "El dinero para los hijos se habla con claridad y no se convierte en una pelea constante de la pareja.",
+          "Los hijos no se usan como mensajeros de quejas, de plata o de conflictos con el ex."
+        ]
+      },
+      {
+        "title": "Tiempo de pareja y respeto a los hijos del otro",
+        "questions": [
+          "La pareja reserva algo de tiempo para los dos. No todo el tiempo queda solo para los hijos.",
+          "Hay respeto hacia los hijos del otro: no se les insulta, no se les ignora y no se les obliga a demostrar cariño.",
+          "Cuando un hijo está en crisis o hay un conflicto de crianza, la pareja trata de sostenerse como equipo, no como rivales."
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "title": "Convivencia sana con los hijos",
+        "text": "Hay un orden sano: cada adulto tiene su lugar, se respeta a los hijos y la pareja no queda borrada. Qué esperar: igual pueden aparecer celos o lealtades divididas, porque eso es frecuente cuando hay hijos de una relación anterior. Qué hacer: sigan hablando las reglas, cuiden el tiempo de pareja y no exijan a los hijos un cariño inmediato. Buscar ayuda profesional no es urgente, pero puede servir si quieren prevenir conflictos al convivir o al educar juntos."
+      },
+      {
+        "title": "Familia ensamblada en ajuste",
+        "text": "Esta etapa es frecuente. En una familia ensamblada, los vínculos no se forman de un día para otro. Qué esperar: puede haber celos, comparaciones, cansancio o duda sobre quién pone las reglas. Eso no significa que la pareja esté fallando. Significa que hay que cuidar el lugar de cada uno. Qué hacer: acuerden la crianza en privado, respeten al otro padre o madre, y no fuercen la confianza de los hijos. Si las peleas se repiten, puede ayudar una consulta de pareja o de familia."
+      },
+      {
+        "title": "Tensión fuerte que conviene trabajar",
+        "text": "Los hijos están afectando mucho la relación, o la relación está afectando a los hijos. Qué esperar: si no se ordenan los roles, el dinero, el ex o la autoridad, las peleas suelen crecer. Qué hacer: no dejen este tema solo para el momento de la discusión. Hablen de acuerdos concretos. Es un buen momento para buscar ayuda profesional de familia o de pareja, siempre que no haya violencia."
+      },
+      {
+        "title": "Dinámica dañina para la pareja o para los hijos",
+        "text": "Hay señales de que los hijos, o el conflicto alrededor de ellos, están quedando en un lugar que hace daño. Qué esperar: pueden aumentar los celos, las alianzas, el maltrato verbal o la pelea por la autoridad. Qué hacer: protege a los niños y también tu trato de pareja. Ningún hijo debe ser mensajero, arma o juez. Si hay miedo, insultos o violencia, busca ayuda primero. Si no hay violencia, puede ayudar una consulta de familia o de pareja con alguien que conozca familias ensambladas."
+      }
+    ]
+  },
+  "amistad": {
+    "id": "amistad",
+    "theme": "amistad",
+    "title": "Amistad",
+    "kicker": "Esmeralda",
+    "short": "18 señales en 6 áreas.",
+    "intro": [
+      "Un amigo verdadero cuida, escucha y está de los dos lados. Un amigo de ocasión o de conveniencia aparece a ratos, o cuando le sirve. Un conocido puede ser amable, pero no es un amigo."
+    ],
+    "dims": [
+      {
+        "title": "Presencia y constancia",
+        "questions": [
+          "Te busca también cuando no necesita un favor.",
+          "Mantiene el contacto con cierta constancia. No desaparece por mucho tiempo sin razón.",
+          "Los planes se cumplen. No se quedan solo en promesas."
+        ]
+      },
+      {
+        "title": "Confianza y confidencialidad",
+        "questions": [
+          "Puedes contarle algo importante y te escucha de verdad.",
+          "Cuida lo que le confías y no lo cuenta a otros.",
+          "Puedes ser sincero sin miedo a que te exponga o se burle."
+        ]
+      },
+      {
+        "title": "Apoyo mutuo",
+        "questions": [
+          "Está cuando pasas un mal momento, aunque no pueda resolverlo todo.",
+          "Celebra tus cosas buenas, no solo aparece en los problemas.",
+          "En una dificultad, sientes que puedes pedirle apoyo."
+        ]
+      },
+      {
+        "title": "Respeto y límites",
+        "questions": [
+          "Respeta tu tiempo, tu espacio y tus límites.",
+          "No habla mal de ti a tus espaldas.",
+          "Acepta un no, y no te presiona para hacer lo que no quieres."
+        ]
+      },
+      {
+        "title": "Reciprocidad",
+        "questions": [
+          "La relación es de los dos: no eres tú quien siempre da y el otro solo recibe.",
+          "Después de estar con esa persona, te sientes en calma, no usado ni confundido.",
+          "También puede pedirte ayuda, y hay un intercambio justo."
+        ]
+      },
+      {
+        "title": "Honestidad y calidad del vínculo",
+        "questions": [
+          "Te dice la verdad con respeto, no te manipula.",
+          "Pueden tener una diferencia y seguir siendo amigos.",
+          "Te sientes auténtico con esa persona. No tienes que fingir quién eres."
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "title": "Amigo verdadero",
+        "text": "Esto se parece a un amigo verdadero. Qué esperar: puedes esperar apoyo, sinceridad y compañía. Qué hacer: cuida tú también esa amistad. No hace falta una consulta para una amistad sana, pero sí conviene hablar si algo empieza a doler."
+      },
+      {
+        "title": "Amistad que se puede cuidar",
+        "text": "Hay un vínculo real, pero está irregular o a medias. Qué esperar: a veces habrá apoyo, y a veces se sentirá lejana o desigual. Qué hacer: habla de lo que necesitas, sin acusar. Si los dos quieren, esta amistad se puede cuidar y mejorar."
+      },
+      {
+        "title": "Amigo de ocasión o de conveniencia",
+        "text": "Aparece en algunos momentos, o cuando le sirve. Qué esperar: puede haber buenos ratos, pero el apoyo no es estable. Qué hacer: fíjate si la relación es justa para ti. Puedes reducir lo que das si tú siempre cargas con todo."
+      },
+      {
+        "title": "Amigo de ocasión o conocido cercano",
+        "text": "Esta persona se parece más a un conocido, o a un amigo de ocasión. Qué esperar: no esperes el mismo apoyo que de un amigo de verdad. Qué hacer: está bien compartir cosas ligeras. No entregues tu confianza o tu dinero como si ya hubiera una amistad sólida."
+      },
+      {
+        "title": "Relación de amistad dañina",
+        "text": "El respeto o la confianza están muy lastimados. Qué esperar: puedes salir herido, usado o confundido. Qué hacer: pon límites. No es necesario mantener una amistad que te hace daño. Si hay miedo, control o abuso, busca ayuda."
+      }
+    ]
+  },
+  "vecinos": {
+    "id": "vecinos",
+    "theme": "amistad",
+    "title": "Vecinos, conocidos y compañeros",
+    "kicker": "Esmeralda",
+    "short": "9 señales. Un vecino o un compañero no tiene que ser un amigo.",
+    "intro": [
+      "Un conocido, un vecino o un compañero de trabajo no tiene que ser un amigo. Lo sano es el respeto y los acuerdos claros. El riesgo es confundir esa cercanía con una amistad o con una relación de familia."
+    ],
+    "dims": [
+      {
+        "title": "Respeto y acuerdos",
+        "questions": [
+          "Son respetuosos y educados contigo.",
+          "Cumplen lo que acuerdan en el trabajo, el barrio o el grupo.",
+          "No se aprovechan de tu confianza ni de tu dinero."
+        ]
+      },
+      {
+        "title": "El lugar de la relación",
+        "questions": [
+          "La relación se queda en su lugar: compañero, vecino o conocido. No exige la intimidad de un amigo o de la familia.",
+          "No te presionan para contar tu vida privada.",
+          "Te sientes cómodo con esa cercanía. No sales confundido sobre qué son."
+        ]
+      },
+      {
+        "title": "Cuidado de tu distancia",
+        "questions": [
+          "Puedes decir que no sin que haya un mal ambiente duradero.",
+          "No te piden secretos, plata o favores que no corresponden a un conocido.",
+          "Después de tratar con esa persona, te sientes en paz, no usado."
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "title": "Buen conocido o compañero",
+        "text": "Es un buen conocido o compañero. Qué esperar: puedes esperar respeto y que se cumplan los acuerdos. Qué hacer: no le pidas, ni le entregues, la cercanía de un amigo o de la familia."
+      },
+      {
+        "title": "Señales mezcladas",
+        "text": "Hay señales mezcladas. Qué esperar: a veces se comporta como amigo y a veces como un desconocido. Qué hacer: ve despacio. No entregues confianza de más hasta ver si la relación es estable."
+      },
+      {
+        "title": "Conviene cuidar la distancia",
+        "text": "Cuida tu distancia. Qué esperar: esta persona no está ofreciendo un trato seguro de compañero o conocido. Qué hacer: no confíes tu vida privada, tu dinero o tus decisiones a alguien que no te trata con respeto, o que quiere una cercanía que no le corresponde."
+      }
+    ]
+  },
+  "hermanos": {
+    "id": "hermanos",
+    "theme": "hermanos",
+    "title": "Hermanos",
+    "kicker": "Naranja",
+    "short": "18 señales en 6 áreas.",
+    "intro": [
+      "Ser hermanos no basta por sí solo. Una buena relación se nota en el respeto, el apoyo y la justicia, no solo en compartir apellido o recuerdos de infancia."
+    ],
+    "dims": [
+      {
+        "title": "Contacto y presencia",
+        "questions": [
+          "Mantienen el contacto aunque no necesiten un favor.",
+          "En fechas o momentos importantes, hay algún gesto de presencia.",
+          "El silencio largo, si ocurre, no es la única forma de relacionarse."
+        ]
+      },
+      {
+        "title": "Respeto y trato",
+        "questions": [
+          "Hay respeto, aunque no siempre estén de acuerdo.",
+          "No hay humillaciones, burlas crueles ni miedo al hablar.",
+          "Se reconocen como adultos, no solo como el rol que tenían de niños."
+        ]
+      },
+      {
+        "title": "Apoyo y lealtad",
+        "questions": [
+          "Se interesan por el bienestar del otro, no solo por la obligación familiar.",
+          "Se apoyan cuando de verdad importa.",
+          "En una dificultad grande, puedes contar con esa persona, o ella puede contar contigo."
+        ]
+      },
+      {
+        "title": "Justicia y límites en la familia",
+        "questions": [
+          "No usan a la familia para controlar, humillar o poner a uno en contra del otro.",
+          "En asuntos de la familia, como el cuidado u otras responsabilidades, buscan ser justos, o al menos hablarlo.",
+          "Cada uno puede tener su propia vida, sin culpas constantes."
+        ]
+      },
+      {
+        "title": "Conflicto y reparación",
+        "questions": [
+          "Pueden ser honestos sin ser crueles.",
+          "Después de una pelea, pueden pedir perdón o hacer las paces.",
+          "Un desacuerdo no se convierte en un corte definitivo o en una guerra familiar."
+        ]
+      },
+      {
+        "title": "Espacio e independencia",
+        "questions": [
+          "Respetan tu pareja, tu casa o tus decisiones, aunque piensen distinto.",
+          "No exigen una cercanía que tú no puedes o no quieres dar.",
+          "El lazo se siente elegido también, no solo obligado."
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "title": "Relación de hermanos sólida",
+        "text": "Esto es una buena relación de hermanos. Qué esperar: puedes esperar respeto, apoyo y un lazo que se cuida. Qué hacer: sigan hablando y siendo justos el uno con el otro. Una consulta familiar no es urgente, aunque puede ayudar si hay heridas antiguas que quieren mirar con calma."
+      },
+      {
+        "title": "Vínculo que se puede cuidar y mejorar",
+        "text": "El lazo familiar existe, pero falta cuidado, respeto o equilibrio. Qué esperar: puede haber cariño y, al mismo tiempo, distancia o resentimiento. Qué hacer: hablen de lo que duele, sin atacar. Si el conflicto se arrastra por años o involucra a toda la familia, un profesional de familia puede ayudar."
+      },
+      {
+        "title": "Lazo familiar distante o desigual",
+        "text": "Son hermanos, pero el vínculo está distante o es poco recíproco. Qué esperar: no asumas un apoyo que hoy no está. Qué hacer: puedes mantener un contacto respetuoso, y al mismo tiempo cuidar tu paz. No tienes que forzar una cercanía que la otra persona no ofrece."
+      },
+      {
+        "title": "Relación de hermanos dañina",
+        "text": "Ser familia no obliga a aguantar falta de respeto. Qué esperar: el daño puede seguir si no hay límites. Qué hacer: puedes querer a tu hermano y, aun así, cuidar tu paz. Pon límites claros, reduce el contacto si hace falta, y busca ayuda si hay miedo, control o maltrato. Una consulta familiar solo es conveniente si hay seguridad para hablar."
+      }
+    ]
+  },
+  "papa": {
+    "id": "papa",
+    "theme": "papa",
+    "title": "Papá e hijo",
+    "kicker": "Azul",
+    "short": "18 señales en 6 áreas. Sirve si el hijo ya es joven o adulto.",
+    "intro": [
+      "Una relación sana se mira desde los dos lados: el del papá y el del hijo. Estas señales sirven si el hijo ya es joven o adulto. Un niño pequeño necesita cuidado y protección del adulto; no se le pide lo mismo que a un hijo mayor.",
+      "Puedes responder pensando en ti como papá, o pensando en tu relación con tu papá. Lo importante es mirar cómo se tratan los dos, no solo lo que uno espera del otro."
+    ],
+    "dims": [
+      {
+        "title": "Respeto mutuo",
+        "questions": [
+          "Hay respeto de los dos lados: nadie humilla al otro ni lo trata como si no valiera.",
+          "Pueden hablar sin gritos y sin miedo.",
+          "Se escuchan, aunque no estén de acuerdo."
+        ]
+      },
+      {
+        "title": "Cariño y reconocimiento",
+        "questions": [
+          "El cariño se muestra con palabras o con hechos, no solo con plata o con favores.",
+          "Cada uno se interesa por la vida del otro, no solo cuando necesita algo.",
+          "Hay reconocimiento de lo bueno, no solo críticas."
+        ]
+      },
+      {
+        "title": "Comunicación",
+        "questions": [
+          "Pueden hablar de temas difíciles, como salud, dinero, decisiones o emociones, sin que la conversación se rompa enseguida.",
+          "Se pueden reconocer errores y pedir perdón.",
+          "Hay espacio para decir “esto me duele” sin que el otro lo tome solo como un ataque."
+        ]
+      },
+      {
+        "title": "Límites y autonomía",
+        "questions": [
+          "Se respetan los límites: visitas, dinero, intimidad y decisiones de cada uno.",
+          "Cada uno puede tener su propia vida, como el estudio, el trabajo, la pareja o los amigos, sin perder el vínculo.",
+          "El papá acompaña, pero no decide toda la vida del hijo joven o adulto."
+        ]
+      },
+      {
+        "title": "Apoyo en las dificultades",
+        "questions": [
+          "En los momentos difíciles hay acompañamiento, no abandono ni chantaje.",
+          "Si hay ayuda de dinero, vivienda o cuidado, los acuerdos son claros y se cumplen.",
+          "El apoyo no se cobra después con culpas o con control."
+        ]
+      },
+      {
+        "title": "Culpa, control y libertad",
+        "questions": [
+          "El papá no usa la culpa para controlar. El hijo no usa el silencio solo para castigar, sin explicar.",
+          "Nadie amenaza con el cariño, por ejemplo diciendo: si me quisieras, harías esto.",
+          "Hay libertad para pensar distinto sin que eso rompa el lazo."
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "title": "Relación sana de papá e hijo",
+        "text": "Hay respeto, cariño y espacio para los dos. Qué esperar: el papá puede acompañar sin controlar, y el hijo puede vivir su vida sin perder el vínculo. Qué hacer: sigan hablando y reconociendo lo bueno. Una consulta familiar no es urgente. Pueden ir si quieren fortalecer la comunicación."
+      },
+      {
+        "title": "Vínculo con tensiones que se pueden trabajar",
+        "text": "Hay amor o hay contacto, pero faltan respeto, límites o conversación. Qué esperar: pueden quererse y, al mismo tiempo, hacerse daño sin querer. Qué hacer: hablen de lo que cada uno necesita, y de lo que ya no se puede imponer. Una consulta familiar suele ser útil en estos casos, si los dos pueden hablar sin miedo."
+      },
+      {
+        "title": "Relación distante o marcada por el control",
+        "text": "El vínculo existe, pero está marcado por la distancia, la culpa o el control. Qué esperar: si nada cambia, pueden crecer el rencor o el silencio. El hijo puede sentirse niño aunque ya sea adulto, o el papá puede sentirse excluido y reaccionar con presión. Qué hacer: nombra lo que duele y pide límites claros. Un adulto necesita autonomía, y un papá puede seguir siendo importante sin decidirlo todo. Si solos no logran ese equilibrio, puede ayudar una consulta familiar o individual."
+      },
+      {
+        "title": "Relación de papá e hijo dañina",
+        "text": "El vínculo está lastimado. Qué esperar: el miedo, la culpa o el maltrato no se van solos. Qué hacer: no tienes que aceptar gritos, culpa o control para “ser buen hijo” o “ser buen papá”. Pon límites. Si hay miedo o maltrato, busca ayuda. Una consulta familiar no debe ser el primer paso cuando hay violencia; primero está la seguridad."
+      }
+    ]
+  },
+  "alarmas": [
+    "Maltrato físico: golpes, empujones o amenazas de hacerte daño.",
+    "Maltrato con palabras: insultos, gritos que buscan humillarte, o burla constante.",
+    "Manipulación: te hace sentir culpable, confundido o con miedo para que hagas lo que esa persona quiere.",
+    "Aprovechamiento económico: te pide plata una y otra vez, controla tu dinero o se aprovecha de tu trabajo sin un acuerdo justo.",
+    "Aislamiento: te aleja de tu familia, de tus amigos o de quienes te pueden ayudar.",
+    "Control: revisa tu teléfono, te vigila o te dice con quién puedes hablar."
+  ]
+};</script>
+  <script>(function () {
+  "use strict";
+
+  const STORAGE = "a-que-atenerte-v1";
+  const WA =
+    "https://wa.me/573042349545?text=" +
+    encodeURIComponent(
+      "Hola, te escribo por la guía A qué atenerte. Cuesta 20.000 pesos. Se paga por Nequi al 304 234 9545. En cuanto vea el pago, te envío el PDF por este mismo chat."
+    );
+
+  const THEMES = {
+    pareja: "theme-pareja",
+    papa: "theme-papa",
+    amistad: "theme-amistad",
+    hermanos: "theme-hermanos",
+    alarma: "theme-alarma",
+  };
+
+  const flat = {};
+  Object.keys(DATA).forEach(function (id) {
+    const s = DATA[id];
+    if (!s || !s.dims) return;
+    const list = [];
+    s.dims.forEach(function (d, di) {
+      d.questions.forEach(function (q, qi) {
+        list.push({ text: q, dim: di, qi: qi, title: d.title });
+      });
+    });
+    s.totalQ = list.length;
+    s.max = list.length * 2;
+    s.flat = list;
+    flat[id] = list;
+  });
+
+  let state = load() || { answers: {}, alarms: {}, dimIndex: 0 };
+  let current = null; // section id
+  let mode = "home";
+
+  function load() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE) || "");
+    } catch (e) {
+      return null;
+    }
+  }
+  function save() {
+    try {
+      localStorage.setItem(
+        STORAGE,
+        JSON.stringify({ answers: state.answers, alarms: state.alarms, dimIndex: state.dimIndex })
+      );
+    } catch (e) {}
+  }
+
+  const $ = function (id) {
+    return document.getElementById(id);
+  };
+  const views = {
+    home: $("view-home"),
+    test: $("view-test"),
+    result: $("view-result"),
+    alarmas: $("view-alarmas"),
+    hablar: $("view-hablar"),
+    aviso: $("view-aviso"),
+  };
+
+  function show(name) {
+    mode = name;
+    Object.keys(views).forEach(function (k) {
+      views[k].hidden = k !== name;
+    });
+    window.scrollTo(0, 0);
+    $("contenido").focus({ preventScroll: true });
+  }
+
+  function setTheme(theme, sub) {
+    const header = $("app-header");
+    header.className = "app-header " + (THEMES[theme] || "");
+    if (theme) header.classList.add("in-section");
+    $("btn-back").hidden = !theme && mode === "home";
+    $("header-sub").textContent = sub || "";
+    document.body.className = theme ? THEMES[theme] : "";
+  }
+
+  function parseHash() {
+    const h = (location.hash || "#inicio").replace(/^#\/?/, "");
+    const parts = h.split("/").filter(Boolean);
+    return parts[0] || "inicio";
+  }
+
+  function go(hash) {
+    if (location.hash.replace(/^#/, "") === hash) {
+      route();
+    } else {
+      location.hash = hash;
+    }
+  }
+
+  function route() {
+    const page = parseHash();
+    if (page === "inicio" || page === "") {
+      current = null;
+      setTheme("", "");
+      $("btn-back").hidden = true;
+      show("home");
+      return;
+    }
+    if (page === "alarmas") {
+      current = "alarmas";
+      setTheme("alarma", "Señales de alarma");
+      $("btn-back").hidden = false;
+      renderAlarmas();
+      show("alarmas");
+      return;
+    }
+    if (page === "hablar") {
+      current = null;
+      setTheme("", "Cómo hablarlo");
+      $("btn-back").hidden = false;
+      show("hablar");
+      return;
+    }
+    if (page === "aviso") {
+      current = null;
+      setTheme("", "Aviso importante");
+      $("btn-back").hidden = false;
+      show("aviso");
+      return;
+    }
+    if (DATA[page] && DATA[page].dims) {
+      current = page;
+      const s = DATA[page];
+      setTheme(s.theme, s.title);
+      $("btn-back").hidden = false;
+      if (isComplete(page)) {
+        renderResult(page);
+        show("result");
+      } else {
+        if (state.dimIndex == null || state.section !== page) {
+          state.dimIndex = firstUnansweredDim(page);
+          state.section = page;
+        }
+        renderTest(page);
+        show("test");
+      }
+      return;
+    }
+    go("inicio");
+  }
+
+  function answersOf(id) {
+    if (!state.answers[id]) state.answers[id] = {};
+    return state.answers[id];
+  }
+
+  function key(di, qi) {
+    return di + "-" + qi;
+  }
+
+  function isComplete(id) {
+    const a = answersOf(id);
+    return DATA[id].flat.every(function (q) {
+      return a[key(q.dim, q.qi)] != null;
+    });
+  }
+
+  function answeredCount(id) {
+    const a = answersOf(id);
+    return DATA[id].flat.filter(function (q) {
+      return a[key(q.dim, q.qi)] != null;
+    }).length;
+  }
+
+  function firstUnansweredDim(id) {
+    const a = answersOf(id);
+    const dims = DATA[id].dims;
+    for (let i = 0; i < dims.length; i++) {
+      const qs = dims[i].questions;
+      for (let j = 0; j < qs.length; j++) {
+        if (a[key(i, j)] == null) return i;
+      }
+    }
+    return 0;
+  }
+
+  function dimScores(id) {
+    const a = answersOf(id);
+    return DATA[id].dims.map(function (d, di) {
+      let sum = 0;
+      let n = 0;
+      d.questions.forEach(function (_, qi) {
+        const v = a[key(di, qi)];
+        if (v != null) {
+          sum += Number(v);
+          n += 1;
+        }
+      });
+      return { title: d.title, score: sum, max: d.questions.length * 2, answered: n, total: d.questions.length };
+    });
+  }
+
+  function totalScore(id) {
+    return dimScores(id).reduce(function (s, d) {
+      return s + d.score;
+    }, 0);
+  }
+
+  function band(score, max) {
+    const green = Math.ceil(max * 0.8);
+    const yellow = Math.ceil(max * 0.5);
+    if (score >= green) return "verde";
+    if (score >= yellow) return "amarillo";
+    return "rojo";
+  }
+
+  function bandLabel(c) {
+    if (c === "verde") return "Verde";
+    if (c === "amarillo") return "Amarillo";
+    return "Rojo";
+  }
+
+  function bandMeaning(c) {
+    if (c === "verde") return "Esa área se sostiene de forma bastante estable.";
+    if (c === "amarillo") return "Hay algo, pero faltan piezas importantes.";
+    return "Esa área está débil o lastimada. Conviene mirarla con cuidado.";
+  }
+
+  function ranges(max) {
+    const green = Math.ceil(max * 0.8);
+    const yellow = Math.ceil(max * 0.5);
+    return {
+      verde: green + "–" + max,
+      amarillo: yellow + "–" + (green - 1),
+      rojo: "0–" + (yellow - 1),
+    };
+  }
+
+  function perfilId(id) {
+    const dims = dimScores(id);
+    const score = function (i) {
+      return dims[i].score;
+    };
+    const total = totalScore(id);
+
+    if (id === "pareja") {
+      const respeto = score(5);
+      const confianza = score(4);
+      if (respeto <= 2 || (respeto <= 3 && confianza <= 2)) return "Relación dañina";
+      if (
+        total >= 48 &&
+        respeto >= 4 &&
+        confianza >= 4 &&
+        score(0) >= 4 &&
+        score(1) >= 4 &&
+        score(9) >= 4
+      )
+        return "Pareja sólida";
+      const sexualQ2 = Number(answersOf(id)[key(3, 1)]);
+      if (
+        (sexualQ2 === 0 || sexualQ2 === 1) &&
+        score(3) >= 3 &&
+        score(0) <= 3 &&
+        score(2) <= 3 &&
+        score(6) <= 3
+      )
+        return "Relación centrada en lo sexual";
+      if (score(0) <= 3 && score(6) <= 3 && respeto >= 3 && (score(2) >= 3 || score(1) >= 3))
+        return "Amistad con atracción";
+      if (respeto >= 3) return "Pareja en crisis que se puede trabajar";
+      return "El vínculo está débil o desgastado";
+    }
+
+    if (id === "hijos") {
+      if (score(0) <= 2 || score(1) <= 2 || score(3) <= 2)
+        return "Dinámica dañina para la pareja o para los hijos";
+      if (total >= 20 && score(0) >= 4 && score(1) >= 4) return "Convivencia sana con los hijos";
+      if (total >= 12) return "Familia ensamblada en ajuste";
+      return "Tensión fuerte que conviene trabajar";
+    }
+
+    if (id === "amistad") {
+      if (score(3) <= 2 || score(1) <= 2) return "Relación de amistad dañina";
+      if (total >= 29 && score(3) >= 4) return "Amigo verdadero";
+      if (score(0) <= 3 && score(4) <= 3 && score(2) <= 3)
+        return "Amigo de ocasión o de conveniencia";
+      if (total >= 18 && score(3) >= 3) return "Amistad que se puede cuidar";
+      return "Amigo de ocasión o conocido cercano";
+    }
+
+    if (id === "hermanos") {
+      if (score(1) <= 2) return "Relación de hermanos dañina";
+      if (total >= 29 && score(1) >= 4) return "Relación de hermanos sólida";
+      if (total >= 18 && score(1) >= 3) return "Vínculo que se puede cuidar y mejorar";
+      return "Lazo familiar distante o desigual";
+    }
+
+    if (id === "papa") {
+      if (score(0) <= 2 || score(5) <= 2) return "Relación de papá e hijo dañina";
+      if (total >= 29 && score(0) >= 4) return "Relación sana de papá e hijo";
+      if (score(5) <= 3 && score(3) <= 3) return "Relación distante o marcada por el control";
+      if (total >= 18 && score(0) >= 3) return "Vínculo con tensiones que se pueden trabajar";
+      return "Relación distante o marcada por el control";
+    }
+
+    if (id === "vecinos") {
+      if (total >= 15) return "Buen conocido o compañero";
+      if (total >= 9) return "Señales mezcladas";
+      return "Conviene cuidar la distancia";
+    }
+    return "";
+  }
+
+  function findProfile(id, title) {
+    const list = DATA[id].profiles || [];
+    for (let i = 0; i < list.length; i++) {
+      if (list[i].title === title) return list[i];
+    }
+    return { title: title, text: "" };
+  }
+
+  function splitProfile(text) {
+    const parts = { lead: text, esperar: "", hacer: "" };
+    const e = text.indexOf("Qué esperar:");
+    const h = text.indexOf("Qué hacer:");
+    if (e >= 0) {
+      parts.lead = text.slice(0, e).trim();
+      if (h > e) {
+        parts.esperar = text.slice(e + 12, h).trim();
+        parts.hacer = text.slice(h + 10).trim();
+      } else {
+        parts.esperar = text.slice(e + 12).trim();
+      }
+    } else if (h >= 0) {
+      parts.lead = text.slice(0, h).trim();
+      parts.hacer = text.slice(h + 10).trim();
+    }
+    return parts;
+  }
+
+  function renderTest(id) {
+    const s = DATA[id];
+    const di = Math.max(0, Math.min(state.dimIndex || 0, s.dims.length - 1));
+    state.dimIndex = di;
+    const dim = s.dims[di];
+    const done = answeredCount(id);
+    const pct = Math.round((done / s.totalQ) * 100);
+    $("test-intro").hidden = di > 0 && done > 0;
+    $("test-intro").innerHTML = s.intro.map(function (p) { return "<p>" + escapeHtml(p) + "</p>"; }).join("");
+    if (id === "hijos") {
+      $("test-intro").innerHTML +=
+        '<div class="note"><strong>Esta parte es opcional.</strong> Responde solo si en la relación hay hijos: de él, de ella, de ambos, o una familia ensamblada. No cambia el puntaje de pareja.</div>';
+    }
+    $("test-intro").hidden = di > 0;
+
+    $("progress-label").textContent = "Área " + (di + 1) + " de " + s.dims.length;
+    $("progress-count").textContent = done + " de " + s.totalQ + " señales";
+    $("progress-bar").style.width = pct + "%";
+    $("progress-bar").parentElement.setAttribute("aria-valuenow", String(done));
+    $("progress-bar").parentElement.setAttribute("aria-valuemax", String(s.totalQ));
+
+    $("dim-chip").textContent = dim.title;
+    const a = answersOf(id);
+    const startNum = s.dims.slice(0, di).reduce(function (n, d) { return n + d.questions.length; }, 0);
+    $("questions").innerHTML = dim.questions
+      .map(function (q, qi) {
+        const n = startNum + qi + 1;
+        const name = id + "-" + di + "-" + qi;
+        const val = a[key(di, qi)];
+        return (
+          '<form class="q-card" data-di="' +
+          di +
+          '" data-qi="' +
+          qi +
+          '"><fieldset>' +
+          '<legend class="q-legend"><span class="q-num">' +
+          n +
+          ".</span> " +
+          escapeHtml(q) +
+          "</legend>" +
+          '<div class="options" role="radiogroup" aria-label="Respuesta a la señal ' +
+          n +
+          '">' +
+          option(name, "2", "Sí", "2 puntos", val) +
+          option(name, "1", "A medias", "1 punto", val) +
+          option(name, "0", "No", "0 puntos", val) +
+          "</div></fieldset></form>"
+        );
+      })
+      .join("");
+
+    const dimDone = dim.questions.every(function (_, qi) {
+      return a[key(di, qi)] != null;
+    });
+    $("btn-prev-dim").hidden = di === 0;
+    $("btn-next-dim").textContent = di === s.dims.length - 1 ? "Ver mi resultado" : "Área siguiente";
+    $("btn-next-dim").disabled = !dimDone;
+    markSelected($("questions"));
+  }
+
+
+  function markSelected(root) {
+    (root || document).querySelectorAll(".opt").forEach(function (lab) {
+      const input = lab.querySelector("input");
+      if (input) lab.classList.toggle("is-selected", input.checked);
+    });
+  }
+  function option(name, value, label, pts, current) {
+    const checked = String(current) === value ? " checked" : "";
+    return (
+      '<label class="opt"><input type="radio" name="' +
+      name +
+      '" value="' +
+      value +
+      '"' +
+      checked +
+      ">" +
+      '<span>' +
+      label +
+      '</span><span class="pts">' +
+      pts +
+      "</span></label>"
+    );
+  }
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function renderResult(id) {
+    const s = DATA[id];
+    const total = totalScore(id);
+    const c = band(total, s.max);
+    const r = ranges(s.max);
+    const title = perfilId(id);
+    const prof = findProfile(id, title);
+    const parts = splitProfile(prof.text);
+    const danger =
+      /dañina/.test(title) || title.indexOf("cuidar la distancia") >= 0;
+
+    let html = "";
+    html += '<p class="result-kicker">' + escapeHtml(s.title) + "</p>";
+    html += '<div class="score-line">';
+    html += '<span class="score-num">' + total + '</span>';
+    html += '<span class="score-max">de ' + s.max + " puntos</span>";
+    html +=
+      '<span class="badge badge-' +
+      c +
+      '">' +
+      bandLabel(c) +
+      " (" +
+      r[c] +
+      ")</span></div>";
+    html +=
+      '<p class="small">El color del resultado es un semáforo (verde, amarillo o rojo). No es el color de esta sección. Verde: ' +
+      r.verde +
+      ". Amarillo: " +
+      r.amarillo +
+      ". Rojo: " +
+      r.rojo +
+      ".</p>";
+    $("result-hero").innerHTML = html;
+
+    const profile = $("result-profile");
+    profile.className = "profile-card split" + (danger ? " danger" : "");
+    let ph = "<h2 class=\"result-title\">" + escapeHtml(title) + "</h2>";
+    if (parts.lead) ph += "<p>" + escapeHtml(parts.lead) + "</p>";
+    if (parts.esperar) ph += "<h3>Qué esperar</h3><p>" + escapeHtml(parts.esperar) + "</p>";
+    if (parts.hacer) ph += "<h3>Qué hacer</h3><p>" + escapeHtml(parts.hacer) + "</p>";
+    if (danger) {
+      ph +=
+        '<div class="note alert"><strong>Si hay miedo, violencia o peligro, pide ayuda primero.</strong> En esos casos, una consulta de pareja o de familia no debe ser el primer paso. En Colombia puedes llamar, gratis y las 24 horas, al <a href="tel:123">123</a> (emergencias), al <a href="tel:155">155</a> (violencias basadas en género) o al <a href="tel:106">106</a> (salud mental).</div>';
+    }
+    profile.innerHTML = ph;
+
+    $("result-areas").innerHTML =
+      "<h2>Puntaje de cada área</h2>" +
+      dimScores(id)
+        .map(function (d) {
+          const bc = band(d.score, d.max);
+          return (
+            '<div class="area"><div class="area-top"><span class="area-name">' +
+            escapeHtml(d.title) +
+            '</span><span class="area-pts">' +
+            d.score +
+            " / " +
+            d.max +
+            ' · <span class="badge badge-' +
+            bc +
+            '">' +
+            bandLabel(bc) +
+            "</span></span></div><div class=\"mini-bar " +
+            bc +
+            '" aria-hidden="true"><span></span></div><p class="small">' +
+            bandMeaning(bc) +
+            "</p></div>"
+          );
+        })
+        .join("");
+
+    const extra = $("result-extra");
+    let more = "";
+    if (id === "pareja") {
+      more +=
+        '<div class="note"><strong>¿Hay hijos en esta relación?</strong> Si hay hijos de él, de ella, de ambos, o una familia ensamblada, puedes responder una parte opcional de 12 señales. No cambia este puntaje de pareja.</div>';
+      more +=
+        '<p><button class="btn btn-primary" type="button" data-go="hijos">Responder la parte de hijos</button></p>';
+    }
+    if (id === "amistad") {
+      more +=
+        '<div class="note"><strong>¿Quieres mirar también a un vecino o compañero?</strong> Un vecino, un conocido o un compañero de trabajo no tiene que ser un amigo. Esta parte usa el mismo color esmeralda, porque forma parte de amistades y vecinos.</div>';
+      more +=
+        '<p><button class="btn btn-primary" type="button" data-go="vecinos">Responder vecinos y compañeros</button></p>';
+    }
+    if (id === "hijos") {
+      more +=
+        '<p><button class="btn btn-ghost" type="button" data-go="pareja">Volver al resultado de pareja</button></p>';
+    }
+    if (id === "vecinos") {
+      more +=
+        '<p><button class="btn btn-ghost" type="button" data-go="amistad">Volver al resultado de amistad</button></p>';
+    }
+    more +=
+      '<p style="margin-top:1rem"><button class="btn btn-ghost" type="button" data-go="hablar">Cómo hablarlo sin atacar</button></p>';
+    more +=
+      '<p><button class="btn btn-ghost" type="button" id="btn-edit">Cambiar mis respuestas</button></p>';
+    more +=
+      '<p><button class="btn btn-ghost" type="button" id="btn-reset">Borrar las respuestas de esta sección</button></p>';
+    more +=
+      '<div class="howto"><h2>¿Quieres la guía impresa?</h2><p>Este test es gratuito. Si quieres la guía en PDF, para imprimir y marcar a mano, cuesta 20.000 pesos. Se paga por Nequi al 304 234 9545. Escríbeme por WhatsApp y, en cuanto vea el pago, te la envío por el mismo chat.</p><p><a class="btn btn-wa" href="' +
+      WA +
+      '" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a></p></div>';
+    extra.innerHTML = more;
+  }
+
+  function renderAlarmas() {
+    const items = DATA.alarmas;
+    const a = state.alarms;
+    $("alarm-questions").innerHTML = items
+      .map(function (q, i) {
+        const val = a[String(i)];
+        const name = "al-" + i;
+        return (
+          '<form class="q-card yn"><fieldset>' +
+          '<legend class="q-legend"><span class="q-num">' +
+          (i + 1) +
+          ".</span> " +
+          escapeHtml(q) +
+          "</legend>" +
+          '<div class="options" role="radiogroup" aria-label="Respuesta a la alarma ' +
+          (i + 1) +
+          '">' +
+          option(name, "si", "Sí", "Ocurre", val) +
+          option(name, "no", "No", "No ocurre", val) +
+          "</div></fieldset></form>"
+        );
+      })
+      .join("");
+    markSelected($("alarm-questions"));
+    updateAlarmResult();
+  }
+
+  function updateAlarmResult() {
+    const vals = Object.keys(state.alarms).map(function (k) { return state.alarms[k]; });
+    const any = vals.some(function (v) { return v === "si"; });
+    const answered = Object.keys(state.alarms).length;
+    const box = $("alarm-result");
+    if (!answered) {
+      box.hidden = true;
+      box.innerHTML = "";
+      return;
+    }
+    box.hidden = false;
+    if (any) {
+      box.innerHTML =
+        '<div class="note alert"><strong>Marcaste que sí en al menos una señal.</strong> Si hay violencia o estás en peligro, pide ayuda ahora. Si puedes, busca un lugar seguro. Lo que te hacen no es tu culpa. El puntaje de la relación no importa más que tu seguridad. En estos casos, una consulta de pareja o de familia no debe ser el primer paso.</div>';
+    } else if (answered === DATA.alarmas.length) {
+      box.innerHTML =
+        '<div class="note"><strong>No marcaste ninguna de estas alarmas.</strong> Aun así, si en otro momento aparece miedo o daño, vuelve aquí y pide ayuda si la necesitas.</div>';
+    } else {
+      box.innerHTML = '<p class="small">Responde las que faltan para ver la indicación completa. Con que una respuesta sea sí, ya hay que prestar atención.</p>';
+    }
+  }
+
+  $("questions").addEventListener("submit", function (ev) { ev.preventDefault(); });
+  $("alarm-questions").addEventListener("submit", function (ev) { ev.preventDefault(); });
+  $("questions").addEventListener("change", function (ev) {
+    const input = ev.target;
+    if (!input || input.type !== "radio" || !current) return;
+    const card = input.closest(".q-card");
+    if (!card) return;
+    answersOf(current)[key(card.dataset.di, card.dataset.qi)] = input.value;
+    save();
+    markSelected(card);
+    const s = DATA[current];
+    const di = Number(card.dataset.di);
+    const dim = s.dims[di];
+    const a = answersOf(current);
+    const dimDone = dim.questions.every(function (_, qi) {
+      return a[key(di, qi)] != null;
+    });
+    $("btn-next-dim").disabled = !dimDone;
+    const done = answeredCount(current);
+    $("progress-count").textContent = done + " de " + s.totalQ + " señales";
+    $("progress-bar").style.width = Math.round((done / s.totalQ) * 100) + "%";
+  });
+
+  $("btn-next-dim").addEventListener("click", function () {
+    if (!current) return;
+    const s = DATA[current];
+    if (state.dimIndex >= s.dims.length - 1) {
+      if (isComplete(current)) {
+        renderResult(current);
+        show("result");
+      }
+      return;
+    }
+    state.dimIndex += 1;
+    save();
+    renderTest(current);
+    window.scrollTo(0, 0);
+  });
+
+  $("btn-prev-dim").addEventListener("click", function () {
+    if (!current) return;
+    state.dimIndex = Math.max(0, (state.dimIndex || 0) - 1);
+    save();
+    renderTest(current);
+    window.scrollTo(0, 0);
+  });
+
+  $("btn-back").addEventListener("click", function () {
+    if (mode === "result" && (current === "hijos" || current === "vecinos")) {
+      go(current === "hijos" ? "pareja" : "amistad");
+      return;
+    }
+    if (mode === "test" || mode === "result" || mode === "alarmas" || mode === "hablar" || mode === "aviso") {
+      go("inicio");
+    }
+  });
+
+  $("result-extra").addEventListener("click", function (ev) {
+    const t = ev.target.closest("[data-go], #btn-edit, #btn-reset");
+    if (!t) return;
+    if (t.id === "btn-edit") {
+      state.dimIndex = 0;
+      renderTest(current);
+      show("test");
+      return;
+    }
+    if (t.id === "btn-reset") {
+      if (confirm("¿Borrar las respuestas de esta sección? Esta acción no se puede deshacer.")) {
+        state.answers[current] = {};
+        state.dimIndex = 0;
+        save();
+        renderTest(current);
+        show("test");
+      }
+      return;
+    }
+    if (t.dataset.go) go(t.dataset.go);
+  });
+
+  $("alarm-questions").addEventListener("change", function (ev) {
+    const input = ev.target;
+    if (!input || input.type !== "radio") return;
+    const i = input.name.replace("al-", "");
+    state.alarms[i] = input.value;
+    save();
+    markSelected($("alarm-questions"));
+    updateAlarmResult();
+  });
+
+  document.querySelectorAll("[data-nav]").forEach(function (el) {
+    el.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      go(el.getAttribute("data-nav"));
+    });
+  });
+
+  window.addEventListener("hashchange", route);
+  route();
+})();
+</script>
+</body>
+</html>
